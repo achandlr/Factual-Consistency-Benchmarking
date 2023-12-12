@@ -7,7 +7,7 @@ import logging
 from abc import ABC, abstractmethod
 
 # Losely based on https://github.com/kajyuuen/Dawid-skene/tree/master
-class DawidSkeneModel(ABC):
+class DawidSkeneModel(ModelBaseClass):
     def __init__(self, class_num=2, max_iter=100, tolerance=0.01):
         self.class_num = class_num
         self.max_iter = max_iter

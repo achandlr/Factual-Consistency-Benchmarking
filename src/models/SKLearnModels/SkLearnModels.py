@@ -415,22 +415,21 @@ def instantiate_sk_learn_models():
     models = [
         # TODO: Uncomment the models that I have commented out. Commented out means that it works
         WeightedMajorityVotingClassifier(),
-        # RandomForestSKLearnModel(),
-        # GradientBoostingSKLearnModel(),
-        # AdaBoostSKLearnModel(),
-        # DummySKLearnModel(),
-        # LogisticRegressionSKLearnModel(),
-        # SVCSKLearnModel(),
-        # DecisionTreeSKLearnModel(),
-        # GaussianNBSKLearnModel(),
-        # MultinomialNBSKLearnModel(),
-        # BernoulliNBSKLearnModel(),
-        # KNeighborsSKLearnModel(),
-        # LDASKLearnModel(),
-        # CatBoostSKLearnModel(),
-        # LGBMSKLearnModel(),
-        # XGBSKLearnModel(),
-        # TODO: Include linear regression
+        RandomForestSKLearnModel(),
+        GradientBoostingSKLearnModel(),
+        AdaBoostSKLearnModel(),
+        DummySKLearnModel(),
+        LogisticRegressionSKLearnModel(),
+        SVCSKLearnModel(),
+        DecisionTreeSKLearnModel(),
+        GaussianNBSKLearnModel(),
+        MultinomialNBSKLearnModel(),
+        BernoulliNBSKLearnModel(),
+        KNeighborsSKLearnModel(),
+        LDASKLearnModel(),
+        CatBoostSKLearnModel(),
+        LGBMSKLearnModel(),
+        XGBSKLearnModel(),
     ]
 
     # For VotingClassifier, we need to pass a list of model tuples

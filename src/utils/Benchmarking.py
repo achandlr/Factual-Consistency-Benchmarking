@@ -10,6 +10,8 @@ import pickle
 from src.utils.logger import setup_logger
 from src.models.WRENCHModels.DawidSkeneModel import DawidSkeneModel
 from src.models.WRENCHModels.SnorkelModels import SnorkelLabelModel, SnorkelMajorityLabelVoter
+# from src.models.WRENCHModels.PyannoModels import PyAnnoModelB
+from src.models.AlexEnsemblingMethods.ConditionalLR import ConditionalLR
 
 class Benchmark:
     def __init__(self, models, df):
@@ -103,9 +105,11 @@ class Benchmark:
 
 if __name__ == "__main__":
 
-    wrench_models = [SnorkelLabelModel(), SnorkelMajorityLabelVoter(), DawidSkeneModel()] # , MajorityVotingModel(), SnorkelModel(), MeTalModel(), WeaselModel(), ConsensusModel()]
+
+    wrench_models = [ SnorkelLabelModel(), SnorkelMajorityLabelVoter(), DawidSkeneModel()] # , MajorityVotingModel(), SnorkelModel(), MeTalModel(), WeaselModel(), ConsensusModel()] # PyAnnoModelB(),
     # sk_learn_models = instantiate_sk_learn_models()
-    models = wrench_models # + sk_learn_models
+    alex_ensembling_models = [ConditionalLR()]
+    models = alex_ensembling_models  + wrench_models # + sk_learn_models
 
     '''
     TODO: Implement and add Pyanno models
