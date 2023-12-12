@@ -84,7 +84,8 @@ Stages of what Devesh/I need to do
 12/14
 5. Devesh - add consensus code to src\models\ConsensusMethod 
     this code should predict all data (stage 1 + stage 2)
-6. Now we will have our benchmarking mostly done. We will be able to compare our consensus method to all of our ensembling methods
+6. Rerun Ensembling now including the consensus method
+    - Now we will have our benchmarking mostly done. We will be able to compare our consensus method to all of our ensembling methods
 
 12/15
 7. Add support so that ensembling consensus code (likely in benchmarking.py) so that consensus code can report the indices of confident and train,
