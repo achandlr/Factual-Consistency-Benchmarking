@@ -1,3 +1,1 @@
-1. Add models to model category. include alignscore, wrench models, snorkel, metal etc.
-2. add to grid search for each method to confirm it works as decided - continue on BernoulliNBSKLearnModel
-3. add logger so that my terminal is not flooded with messages
+1. Add models to model category. add pyanno model (at least their dawid maybe all 3), include snorkel's flying squid seperate directory model, then do snorkel's old MetAL -- -include  wrench models, snorkel, metal etc.

@@ -4,8 +4,12 @@ from src.utils.Evaluator import Evaluator
 from src.utils.DataLoader import BinaryDataLoader, filter_df_by_non_null_prompt
 from src.utils.Experiments import load_experiment_configs  # filter_df_by_experiment_config
 from src.models.SKLearnModels.SkLearnModels import instantiate_sk_learn_models
+# from src.models.WRENCHModels.wrench_model_runner import run_wrench_models, WrenchModelBaseClass
 import random
 import pickle
+from src.utils.logger import setup_logger
+from src.models.WRENCHModels.DawidSkeneModel import DawidSkeneModel
+from src.models.WRENCHModels.SnorkelModels import SnorkelLabelModel, SnorkelMajorityLabelVoter
 
 class Benchmark:
     def __init__(self, models, df):
@@ -15,6 +19,7 @@ class Benchmark:
         self.models = models
         self.df = df
         self.results = pd.DataFrame()
+        self.logger = setup_logger()
 
     def run_benchmark(self):
         """
@@ -56,6 +61,10 @@ class Benchmark:
             Y_test= test_df[ground_truth_column_name].to_numpy() #.transpose() 
 
             for model in self.models:
+                # # is it possible so that this is not a check that needs to be done but is rather done under the hood in the WrenchModelClass
+                # 4. # if we do the following below, we want it to return Y_pred and be bale to report model parameters. think step by step about what I have said and improve it
+                # if isinstance(model, WrenchModelBaseClass):  # Assuming WrenchModelBaseClass is a marker class
+                #     results_df = self.run_wrench_model(train_df, test_df, model.__class__.__name__)
                 # Train the model
                 model.train(X_train, Y_train)
                 # Make predictions
@@ -93,8 +102,14 @@ class Benchmark:
 
 
 if __name__ == "__main__":
-    sk_learn_models = instantiate_sk_learn_models()
 
+    wrench_models = [SnorkelLabelModel(), SnorkelMajorityLabelVoter(), DawidSkeneModel()] # , MajorityVotingModel(), SnorkelModel(), MeTalModel(), WeaselModel(), ConsensusModel()]
+    # sk_learn_models = instantiate_sk_learn_models()
+    models = wrench_models # + sk_learn_models
+
+    '''
+    TODO: Implement and add Pyanno models
+    '''
     DEBUG = True
     if DEBUG:
         def generate_manual_eval():
@@ -106,16 +121,17 @@ if __name__ == "__main__":
             return random.choices(origins, weights=[20, 20, 20, 20, 20], k=1)[0]
 
         if DEBUG:
+            num_total_data_points = 2000
             data = {
-                "Context": [f"Context {i}" for i in range(1, 301)],
-                "Summary": [f"Summary {i}" for i in range(1, 301)],
-                "Manual_Eval": [generate_manual_eval() for _ in range(300)],
+                "Context": [f"Context {i}" for i in range(0, num_total_data_points)],
+                "Summary": [f"Summary {i}" for i in range(0, num_total_data_points)],
+                "Manual_Eval": [generate_manual_eval() for _ in range(num_total_data_points)],
             }
 
             for col in ["col1", "col2", "col3", "col4", "col5"]:
-                data[col] = [random.choice([data["Manual_Eval"][i], None]) if random.random() < 0.1 else data["Manual_Eval"][i] for i in range(300)]
+                data[col] = [random.choice([data["Manual_Eval"][i], None]) if random.random() < 0.1 else data["Manual_Eval"][i] for i in range(num_total_data_points)]
             
-            data["origin"] = [generate_origin() for _ in range(300)]
+            data["origin"] = [generate_origin() for _ in range(num_total_data_points)]
 
         # data = {
         # "Context": ["Context 1", "Context 2", "Context 3", "Context 4", "Context 5"],
@@ -134,7 +150,7 @@ if __name__ == "__main__":
         with open("dataframe_binary_results", "rb") as f: df = pickle.load(f)
 
 
-    benchmark = Benchmark(models = sk_learn_models, df = df)
+    benchmark = Benchmark(models = models, df = df)
     benchmark.run_benchmark()
 
     benchmarking_stats_df = benchmark.results

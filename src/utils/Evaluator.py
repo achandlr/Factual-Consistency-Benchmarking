@@ -1,5 +1,5 @@
 from sklearn.metrics import accuracy_score, balanced_accuracy_score, f1_score, confusion_matrix, recall_score, precision_score
-
+import numpy as np
 class Evaluator:
     @staticmethod
     def get_stats(y_true, y_pred):
@@ -8,7 +8,7 @@ class Evaluator:
         balanced_accuracy = balanced_accuracy_score(y_true, y_pred)
         f1 = f1_score(y_true, y_pred)
         sensitivity = recall_score(y_true, y_pred)  # Recall is the same as sensitivity
-        precision = precision_score(y_true, y_pred)
+        precision = precision_score(y_true, y_pred, zero_division=np.nan)
         
         # Calculating specificity requires TN and FP, which we get from the confusion matrix
         tn, fp, fn, tp = confusion_matrix(y_true, y_pred).ravel()

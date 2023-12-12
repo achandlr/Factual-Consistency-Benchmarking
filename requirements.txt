@@ -5,3 +5,5 @@ xgboost
 lightgbm
 catboost
 torch
+# pymc3
+snorkel

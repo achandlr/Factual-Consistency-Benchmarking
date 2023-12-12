@@ -6,3 +6,5 @@ Benchmarking.egg-info
 *pycache*
 *.pkl
 EnsemblingBenchmark
+src/models/WRENCHModels/wrench
+catboost_info
