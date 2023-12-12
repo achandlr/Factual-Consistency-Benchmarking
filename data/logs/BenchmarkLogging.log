@@ -85,3 +85,264 @@
 2023-12-11 15:26:36,371 - MyAppLogger - DEBUG - Training for LGBMClassifier completed. Time taken: 0.08 seconds.
 2023-12-11 15:28:33,832 - MyAppLogger - INFO - Starting training for LGBMClassifier...
 2023-12-11 15:28:33,913 - MyAppLogger - DEBUG - Training for LGBMClassifier completed. Time taken: 0.08 seconds.
+2023-12-12 14:36:09,406 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:36:09,407 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:36:09,407 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:36:09,408 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:36:09,408 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:36:09,408 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:36:09,408 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:37:08,057 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:37:08,058 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:37:08,058 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:37:08,059 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:37:08,059 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:37:08,059 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:37:08,059 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:39:20,365 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:39:20,366 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:39:20,366 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:39:20,367 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:39:20,367 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:39:20,367 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:39:20,367 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:41:19,530 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:41:19,530 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:41:19,531 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:41:19,531 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:41:19,531 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:41:19,532 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:41:19,532 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:42:32,162 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:42:32,163 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:42:32,163 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:42:32,164 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:42:32,164 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:42:32,164 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:42:32,164 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:43:52,946 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:43:52,946 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:43:52,947 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:43:52,947 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:43:52,947 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:43:52,947 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:43:52,948 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:56:06,961 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:56:06,961 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:56:06,961 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:56:06,962 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:56:06,962 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:56:06,962 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:56:06,962 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:56:29,834 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:56:29,835 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:56:29,835 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:56:29,836 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:56:29,836 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:56:29,836 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:56:29,836 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 14:59:41,199 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 14:59:41,200 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 14:59:41,200 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 14:59:41,201 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 14:59:41,201 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 14:59:41,201 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 14:59:41,202 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 15:03:11,634 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x000001E970793490>
+2023-12-12 15:03:13,665 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 15:03:13,666 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 15:03:13,666 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 15:03:13,667 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 15:03:13,667 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 15:03:13,667 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 15:03:13,667 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 15:03:13,675 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000001E970793490> on model [<src.models.LGBModels.LGBMSKLearnModel object at 0x000001E9714C3990>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x000001E9714E0150>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x000001E9707A38D0>]
+2023-12-12 15:03:41,563 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000001E970793490> on model [<src.models.LGBModels.LGBMSKLearnModel object at 0x000001E9714C3990>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x000001E9714E0150>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x000001E9707A38D0>]
+2023-12-12 15:11:25,410 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000023F1BC13A90>
+2023-12-12 15:11:29,267 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 15:11:29,268 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 15:11:29,268 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 15:11:29,268 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 15:11:29,269 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 15:11:29,269 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 15:11:29,269 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 15:11:29,278 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000023F1BC13A90> on model [<src.models.LGBModels.LGBMSKLearnModel object at 0x0000023F1CA23290>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000023F1CA23310>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000023F1CA23450>]
+2023-12-12 15:12:04,252 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000023F1BC13A90> on model [<src.models.LGBModels.LGBMSKLearnModel object at 0x0000023F1CA23290>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000023F1CA23310>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000023F1CA23450>]
+2023-12-12 15:53:27,307 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000018DA0787F90>
+2023-12-12 15:53:29,360 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 15:53:29,360 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 15:53:29,360 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 15:53:29,361 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 15:53:29,361 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 15:53:29,361 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 15:53:29,361 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 15:53:29,369 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000018DA0787F90> on model [<src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000018D9D282F10>, <src.models.LGBModels.LGBMSKLearnModel object at 0x0000018D9D282F90>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000018D9D283050>]
+2023-12-12 15:54:01,349 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000018DA0787F90> on model [<src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000018D9D282F10>, <src.models.LGBModels.LGBMSKLearnModel object at 0x0000018D9D282F90>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000018D9D283050>]

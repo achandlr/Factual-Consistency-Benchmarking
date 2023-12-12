@@ -8,3 +8,4 @@ Benchmarking.egg-info
 EnsemblingBenchmark
 src/models/WRENCHModels/wrench
 catboost_info
+src/models/flyingsquid

@@ -5,6 +5,51 @@ import torch
 from torch.utils.data import TensorDataset, DataLoader
 import numpy as np
 import pandas as pd
+import random
+from collections import Counter
+from src.utils.logger import setup_logger
+
+
+def load_placeholder_data():
+    def generate_manual_eval():
+        return random.choices([1, 0, None], weights=[45, 45, 10], k=1)[0]
+
+    def generate_origin():
+        origins = ["AGGREFACCT_SOTA_CNN_DM_DEV", "AGGREFACCT_SOTA_CNN_DM_TEST", "AGGREFACCT_SOTA_CNN_DM_VAL", "AGGREFACCT_SOTA_XSUM_TEST", "AGGREFACCT_SOTA_XSUM_DEV"]
+        # Define your likelihood for each origin value
+        return random.choices(origins, weights=[20, 20, 20, 20, 20], k=1)[0]
+
+    num_total_data_points = 2000
+    data = {
+        "Context": [f"Context {i}" for i in range(0, num_total_data_points)],
+        "Summary": [f"Summary {i}" for i in range(0, num_total_data_points)],
+        "Manual_Eval": [generate_manual_eval() for _ in range(num_total_data_points)],
+    }
+
+    for col in ["col1", "col2", "col3", "col4", "col5"]:
+        data[col] = [random.choice([data["Manual_Eval"][i], None]) if random.random() < 0.1 else data["Manual_Eval"][i] for i in range(num_total_data_points)]
+    
+    data["origin"] = [generate_origin() for _ in range(num_total_data_points)]
+
+    # data = {
+    # "Context": ["Context 1", "Context 2", "Context 3", "Context 4", "Context 5"],
+    # "Summary": ["Summary 1", "Summary 2", "Summary 3", "Summary 4", "Summary 5"],
+    # "col1": ["Prediction 1", "Prediction 2", "Prediction 3", "Prediction 4", "Prediction 5"],
+    # "col2": ["Prediction 1", None, "Prediction 3", "Prediction 4", "Prediction 5"],
+    # "col3": ["Prediction 1", "Prediction 2", "Prediction 3", "Prediction 4", "Prediction 5"],
+    # "col4": ["Prediction 1", "Prediction 2", "Prediction 3", "Prediction 4", "Prediction 5"],
+    # "col5": ["Prediction 1", "Prediction 2", "Prediction 3", "Prediction 4", "Prediction 5"],
+    # "Manual_Eval": ["Correct", "Incorrect", "Correct", "Incorrect", "Correct"],
+    # "origin": ["AGGREFACCT_SOTA_CNN_DM_DEV", "AGGREFACCT_SOTA_CNN_DM_TEST", "AGGREFACCT_SOTA_CNN_DM_VAL", "AGGREFACCT_SOTA_XSUM_TEST", "AGGREFACCT_SOTA_XSUM_DEV"]}
+
+    placeholder_df = pd.DataFrame(data)
+    return placeholder_df
+
+def convert_csv_files_to_df(file_path_1, file_path_2):
+    df_1 = pd.read_csv(file_path_1)
+    df_2 = pd.read_csv(file_path_2)
+    combined_df = pd.concat([df_1, df_2])
+    return combined_df
 
 def filter_df_by_non_null_prompt(df, needed_non_null_columns):
     """
@@ -24,9 +69,13 @@ def filter_df_by_non_null_prompt(df, needed_non_null_columns):
 
 
 class BinaryDataLoader:
-    def __init__(self, train_file, test_file):
-        self.train_file = train_file
-        self.test_file = test_file
+    def __init__(self):
+        self.string_error_counter = Counter()
+        self.logger = setup_logger()
+    # def __init__(self, train_file, test_file):
+
+        # self.train_file = train_file
+        # self.test_file = test_file
         # self.X_train, self.Y_train, self.X_test, self.Y_test = None, None, None, None
 
     def load_data(self, data_format = "dictionary_to_df", skip_rows_with_null = True):
@@ -98,9 +147,13 @@ class BinaryDataLoader:
             y = y.astype(int)
             return {"x_array" : X, "y_array": y, "summaries" : summaries, "contexts" : contexts}
 
+    def report_llm_answer_errors(self):
+        for string, freq in self.string_error_counter.most_common():
+            if freq > 1:
+                self.logger.debug(f"ERROR_COUNT: {freq} \t STRING: {string} \n\n")
+                print(f"ERROR_COUNT: {freq} \t STRING: {string} \n\n")
 
-    @staticmethod
-    def advanced_parse_llm_output(input_string):
+    def advanced_parse_llm_output(self, input_string):
         """
         Parses the LLM output for a variety of responses including detailed explanations.
         Prioritizes detection of negated phrases.
@@ -108,6 +161,7 @@ class BinaryDataLoader:
         :param input_string: The string output from the LLM.
         :return: True, False, or None based on the analysis of the input string.
         """
+        input_string = input_string.lower()
         if input_string == None:
             return None
         elif isinstance(input_string, int) or isinstance(input_string, float):
@@ -128,14 +182,26 @@ class BinaryDataLoader:
         elif affirmative_match:
             return 1
         else:
-
+            self.string_error_counter.update([input_string])
             return None
     
     @staticmethod
-    def convert_llm_answers_to_binary(df, columns):
+    def convert_ground_truth_to_binary(input_string):
+        if input_string == "Correct":
+            return 1
+        elif input_string == "Wrong":
+            return 0
+        else:
+            raise NotImplementedError()
+        
+    # @staticmethod
+    def convert_llm_answers_to_binary(self, df, columns, ground_truth_column_name):
         for col in columns:
             if col in df.columns:
-                df[col] = df[col].apply(lambda x: BinaryDataLoader.advanced_parse_llm_output(x) if isinstance(x, str) else x)
+                df[col] = df[col].apply(lambda x: self.advanced_parse_llm_output(x) if isinstance(x, str) else x)
+        
+        df[ground_truth_column_name] = df[ground_truth_column_name].apply(lambda x: BinaryDataLoader.convert_ground_truth_to_binary(x) if isinstance(x, str) else x)
+        
         return df
 
     def convert_to_torch_train_test_data_loader(self, batch_size=64, set_class_data_loaders = True):

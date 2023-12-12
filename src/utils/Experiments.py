@@ -41,14 +41,38 @@ class Experiment:
         if train_set.intersection(test_set):
             raise ValueError("Intersection of train_origin and test_origin should be empty.")
 
+
+
 def load_experiment_configs() -> List[Experiment]:
     # Define the prompt column sets
     # TODO: We need to pass in our columns here!
-    prompt_columns_all_ours = ["col1", "col2", "col3", "col4"]  
-    prompt_columns_top_3 = ["col1", "col2", "col3"]
-    prompt_columns_top_5 = ["col1", "col2", "col3", "col4", "col5"]
-    prompt_columns_top_9 = ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"]
-    prompt_columns_top_15 = ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12", "col13", "col14", "col15"]
+    prompt_columns_all_ours = ['Devesh_Prompt_1 Alex Output Modiciation',
+       'Detailed Inferential Analysis',
+       'Contextual Analysis with Detailed Guidance',
+       'Specific Details and Nuances',
+       'Devesh_Prompt_1.1 Alex Output Modiciation 2 ', 
+       'Devesh Prompt 3',
+       'HALU-EVAl Like Prompt',
+       'Contradiction Highlighted Inferential Analysis',
+       'Strict factual consistency analysis Variant 1 - Targeted Error Detection',
+       'NLI_GPT_PROMPT1119',
+       'Comprehensive factual consistency analysis Variant 3.2',
+       'Extraction NLI', 
+       ' Strict factual consistency analysis Variant 3',
+       'Contextual Analysis with Focus on Contradictory Information',
+       'Luo 23 Zero Shot CoT FactCC',
+       'Comprehensive factual consistency analysis Variant 3.1',
+       'Strict factual consistency analysis', 
+       'GPT_improved_nli_style_prompt',
+       'Strict factual consistency analysis Variant 3 - Strict 2',
+       'Comprehensive factual consistency analysis Variant 3.2 - Strict 7',
+       'Comprehensive factual consistency analysis Variant 3.2 - Strict 8',]
+    
+    
+    prompt_columns_top_3 = prompt_columns_all_ours[0:3] # TODO: add code to select the best 3 promtps to use, ["col1", "col2", "col3"]
+    prompt_columns_top_5 = prompt_columns_all_ours[0:5]  # ["col1", "col2", "col3", "col4", "col5"]
+    prompt_columns_top_9 = prompt_columns_all_ours[0:9] #  ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"]
+    prompt_columns_top_15 = prompt_columns_all_ours[0:15]#   ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12", "col13", "col14", "col15"]
 
     desired_prompt_sets = [prompt_columns_all_ours, prompt_columns_top_3, prompt_columns_top_5, prompt_columns_top_9, prompt_columns_top_15]
 

@@ -360,42 +360,6 @@ class XGBSKLearnModel(SKLearnModel):
         # super().__init__(XGBClassifier(use_label_encoder=False, eval_metric='logloss', early_stopping_rounds=10), param_grid)
         super().__init__(model)
 
-# TODO: This code does't work
-'''
-[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
-[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
-'''
-class LGBMSKLearnModel(SKLearnModel):
-    def __init__(self):
-        # param_grid = {
-        #     'n_estimators': [100, 200, 300],
-        #     'learning_rate': [0.01, 0.05, 0.1, 0.2],
-        #     'num_leaves': [31, 50, 70],
-        #     'max_depth': [3, 4, 5, 6],
-        #     'min_child_samples': [20, 30, 40],
-        #     'subsample': [0.5, 0.7, 1.0],
-        #     'colsample_bytree': [0.3, 0.5, 0.7, 1.0]
-        # # }
-        # param_grid = {
-        #     'n_estimators': [100, 150],  # Further reduced
-        #     'learning_rate': [0.1, 0.2],  # Higher for faster convergence
-        #     'num_leaves': [5, 10],  # Limited to lower complexity
-        #     'max_depth': [3, 4],  # Shallower trees
-        #     'min_child_samples': [20],  # One option to reduce combinations
-        #     'subsample': [0.7, 1.0],  # Simplified
-        #     'colsample_bytree': [0.5, 0.7, 1]  # Simplified
-        # }
-        '''
-        TODO: Below is how to supress warnings from training.
-        # TODO: This code should go in another file
-        import lightgbm as lgb
-        lgb_train = lgb.Dataset(X_train, Y_train, params={'verbose': -1}, free_raw_data=False)
-        lgb_eval = lgb.Dataset(X_test, Y_test, params={'verbose': -1}, free_raw_data=False)
-        gbm = lgb.train({'verbose': -1}, lgb_train,
-                        valid_sets=lgb_eval,
-                model = lgb.LGBMClassifier() 
-        '''
-        raise NotImplementedError()
         # warnings.filterwarnings("ignore", category=Warning)
         # super().__init__(LGBMClassifier(), param_grid = param_grid)
 
@@ -428,7 +392,7 @@ def instantiate_sk_learn_models():
         KNeighborsSKLearnModel(),
         LDASKLearnModel(),
         CatBoostSKLearnModel(),
-        LGBMSKLearnModel(),
+        # LGBMSKLearnModel(),
         XGBSKLearnModel(),
     ]
 

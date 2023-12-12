@@ -7,3 +7,4 @@ catboost
 torch
 # pymc3
 snorkel
+seqeval # for flying squid 
