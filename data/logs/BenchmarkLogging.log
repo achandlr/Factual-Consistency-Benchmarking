@@ -346,3 +346,54 @@
 
 2023-12-12 15:53:29,369 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000018DA0787F90> on model [<src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000018D9D282F10>, <src.models.LGBModels.LGBMSKLearnModel object at 0x0000018D9D282F90>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000018D9D283050>]
 2023-12-12 15:54:01,349 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000018DA0787F90> on model [<src.models.LGBModels.LGBMSKLearnModel3 object at 0x0000018D9D282F10>, <src.models.LGBModels.LGBMSKLearnModel object at 0x0000018D9D282F90>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x0000018D9D283050>]
+2023-12-12 16:01:19,502 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x000002419481C950>
+2023-12-12 16:02:15,522 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 16:02:15,523 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 16:02:15,523 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 16:02:15,523 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 16:02:15,523 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 16:02:15,523 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 16:02:15,524 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+
+2023-12-12 16:05:55,365 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000002419481C950> on model [<src.models.WRENCHModels.DawidSkeneModel.DawidSkeneModel object at 0x00000241D728D7D0>, WeightedMajorityVotingClassifier(classifiers=[LogisticRegression(),
+                                              RandomForestClassifier()]), <src.models.SKLearnModels.SkLearnModels.RandomForestSKLearnModel object at 0x00000241936E96D0>, <src.models.SKLearnModels.SkLearnModels.GradientBoostingSKLearnModel object at 0x000002419361F550>, <src.models.SKLearnModels.SkLearnModels.AdaBoostSKLearnModel object at 0x00000241A66FB290>, <src.models.SKLearnModels.SkLearnModels.DummySKLearnModel object at 0x000002419313EE10>, <src.models.SKLearnModels.SkLearnModels.LogisticRegressionSKLearnModel object at 0x0000024193050E50>, <src.models.SKLearnModels.SkLearnModels.SVCSKLearnModel object at 0x000002419371EA10>, <src.models.SKLearnModels.SkLearnModels.DecisionTreeSKLearnModel object at 0x0000024193147E10>, <src.models.SKLearnModels.SkLearnModels.GaussianNBSKLearnModel object at 0x0000024193744790>, <src.models.SKLearnModels.SkLearnModels.MultinomialNBSKLearnModel object at 0x0000024193654BD0>, <src.models.SKLearnModels.SkLearnModels.BernoulliNBSKLearnModel object at 0x0000024193412450>, <src.models.SKLearnModels.SkLearnModels.KNeighborsSKLearnModel object at 0x000002419366A950>, <src.models.SKLearnModels.SkLearnModels.LDASKLearnModel object at 0x00000241935261D0>, <src.models.SKLearnModels.SkLearnModels.CatBoostSKLearnModel object at 0x000002419368C350>, <src.models.SKLearnModels.SkLearnModels.XGBSKLearnModel object at 0x0000024193726690>, <src.models.AlexEnsemblingMethods.ConditionalLR.ConditionalLR object at 0x000002419345BF50>, <src.models.WRENCHModels.SnorkelModels.SnorkelLabelModel object at 0x0000024193426090>, <src.models.WRENCHModels.SnorkelModels.SnorkelMajorityLabelVoter object at 0x0000024193411D10>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x000002419361F7D0>, <src.models.LGBModels.LGBMSKLearnModel object at 0x00000241932BE550>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x00000241934C9D90>]
+2023-12-12 16:05:56,939 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000002419481C950> on model [<src.models.WRENCHModels.DawidSkeneModel.DawidSkeneModel object at 0x00000241D728D7D0>, WeightedMajorityVotingClassifier(classifiers=[LogisticRegression(),
+                                              RandomForestClassifier()]), <src.models.SKLearnModels.SkLearnModels.RandomForestSKLearnModel object at 0x00000241936E96D0>, <src.models.SKLearnModels.SkLearnModels.GradientBoostingSKLearnModel object at 0x000002419361F550>, <src.models.SKLearnModels.SkLearnModels.AdaBoostSKLearnModel object at 0x00000241A66FB290>, <src.models.SKLearnModels.SkLearnModels.DummySKLearnModel object at 0x000002419313EE10>, <src.models.SKLearnModels.SkLearnModels.LogisticRegressionSKLearnModel object at 0x0000024193050E50>, <src.models.SKLearnModels.SkLearnModels.SVCSKLearnModel object at 0x000002419371EA10>, <src.models.SKLearnModels.SkLearnModels.DecisionTreeSKLearnModel object at 0x0000024193147E10>, <src.models.SKLearnModels.SkLearnModels.GaussianNBSKLearnModel object at 0x0000024193744790>, <src.models.SKLearnModels.SkLearnModels.MultinomialNBSKLearnModel object at 0x0000024193654BD0>, <src.models.SKLearnModels.SkLearnModels.BernoulliNBSKLearnModel object at 0x0000024193412450>, <src.models.SKLearnModels.SkLearnModels.KNeighborsSKLearnModel object at 0x000002419366A950>, <src.models.SKLearnModels.SkLearnModels.LDASKLearnModel object at 0x00000241935261D0>, <src.models.SKLearnModels.SkLearnModels.CatBoostSKLearnModel object at 0x000002419368C350>, <src.models.SKLearnModels.SkLearnModels.XGBSKLearnModel object at 0x0000024193726690>, <src.models.AlexEnsemblingMethods.ConditionalLR.ConditionalLR object at 0x000002419345BF50>, <src.models.WRENCHModels.SnorkelModels.SnorkelLabelModel object at 0x0000024193426090>, <src.models.WRENCHModels.SnorkelModels.SnorkelMajorityLabelVoter object at 0x0000024193411D10>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x000002419361F7D0>, <src.models.LGBModels.LGBMSKLearnModel object at 0x00000241932BE550>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x00000241934C9D90>]
+2023-12-12 16:05:58,047 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000002419481C950> on model [<src.models.WRENCHModels.DawidSkeneModel.DawidSkeneModel object at 0x00000241D728D7D0>, WeightedMajorityVotingClassifier(classifiers=[LogisticRegression(),
+                                              RandomForestClassifier()]), <src.models.SKLearnModels.SkLearnModels.RandomForestSKLearnModel object at 0x00000241936E96D0>, <src.models.SKLearnModels.SkLearnModels.GradientBoostingSKLearnModel object at 0x000002419361F550>, <src.models.SKLearnModels.SkLearnModels.AdaBoostSKLearnModel object at 0x00000241A66FB290>, <src.models.SKLearnModels.SkLearnModels.DummySKLearnModel object at 0x000002419313EE10>, <src.models.SKLearnModels.SkLearnModels.LogisticRegressionSKLearnModel object at 0x0000024193050E50>, <src.models.SKLearnModels.SkLearnModels.SVCSKLearnModel object at 0x000002419371EA10>, <src.models.SKLearnModels.SkLearnModels.DecisionTreeSKLearnModel object at 0x0000024193147E10>, <src.models.SKLearnModels.SkLearnModels.GaussianNBSKLearnModel object at 0x0000024193744790>, <src.models.SKLearnModels.SkLearnModels.MultinomialNBSKLearnModel object at 0x0000024193654BD0>, <src.models.SKLearnModels.SkLearnModels.BernoulliNBSKLearnModel object at 0x0000024193412450>, <src.models.SKLearnModels.SkLearnModels.KNeighborsSKLearnModel object at 0x000002419366A950>, <src.models.SKLearnModels.SkLearnModels.LDASKLearnModel object at 0x00000241935261D0>, <src.models.SKLearnModels.SkLearnModels.CatBoostSKLearnModel object at 0x000002419368C350>, <src.models.SKLearnModels.SkLearnModels.XGBSKLearnModel object at 0x0000024193726690>, <src.models.AlexEnsemblingMethods.ConditionalLR.ConditionalLR object at 0x000002419345BF50>, <src.models.WRENCHModels.SnorkelModels.SnorkelLabelModel object at 0x0000024193426090>, <src.models.WRENCHModels.SnorkelModels.SnorkelMajorityLabelVoter object at 0x0000024193411D10>, <src.models.LGBModels.LGBMSKLearnModel3 object at 0x000002419361F7D0>, <src.models.LGBModels.LGBMSKLearnModel object at 0x00000241932BE550>, <src.models.LGBModels.LGBMSKLearnModel2 object at 0x00000241934C9D90>]
+2023-12-12 16:05:58,048 - MyAppLogger - INFO - Starting GridSearchCV for RandomForestClassifier...
+2023-12-12 16:25:46,217 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x00000125DC9F2390>
+2023-12-12 16:31:44,942 - MyAppLogger - DEBUG - ERROR_COUNT: 2571 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-12 16:31:44,942 - MyAppLogger - DEBUG - ERROR_COUNT: 427 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-12 16:31:44,942 - MyAppLogger - DEBUG - ERROR_COUNT: 273 	 STRING: unable to get answer due to 
+
+
+2023-12-12 16:31:44,943 - MyAppLogger - DEBUG - ERROR_COUNT: 96 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-12 16:31:44,943 - MyAppLogger - DEBUG - ERROR_COUNT: 64 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-12 16:31:44,943 - MyAppLogger - DEBUG - ERROR_COUNT: 32 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-12 16:31:44,943 - MyAppLogger - DEBUG - ERROR_COUNT: 10 	 STRING: unable to get answer due torate limit is exceeded. try again in 4 seconds. 
+
+

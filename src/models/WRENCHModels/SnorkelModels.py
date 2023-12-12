@@ -2,6 +2,8 @@ from snorkel.labeling.model import LabelModel, MajorityLabelVoter
 # from abc import ABC, abstractmethod
 
 from src.models.ModelBaseClass import ModelBaseClass
+
+# TODO: Devesh - build variants of this snorkel label model that test different parameters, maybe even grid search
 class SnorkelLabelModel(ModelBaseClass):
     def __init__(self, cardinality=2, verbose=True):
         self.model = LabelModel(cardinality=cardinality, verbose=verbose)

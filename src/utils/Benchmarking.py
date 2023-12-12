@@ -31,6 +31,7 @@ class Benchmark:
 
         df = self.df
 
+        # TODO: either use these columns or take them out
         new_prompt_columns = None # our prompts
         existing_prompt_columns = None # existing prompts
         ground_truth_column_name = "Manual_Eval"
@@ -51,8 +52,7 @@ class Benchmark:
             df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
             data_loader.report_llm_answer_errors()
             if skip_nulls:
-                # TODO: Use advanced_parse_llm_output before filter by non_null
-                
+                # TODO: Confirm that all rows where one of the columns in prompt_columns_in_use is null is removed from our dataset
                 df_no_null = filter_df_by_non_null_prompt(df, needed_non_null_columns = prompt_columns_in_use + [ground_truth_column_name])
                 train_df = df_no_null[df_no_null['origin'].isin(train_origin)]
                 test_df = df_no_null[df_no_null['origin'].isin(test_origin)]
@@ -122,6 +122,7 @@ if __name__ == "__main__":
     if LOAD_PLACE_HOLDER_DATA:
         df = load_placeholder_data()
     else:
+        # TODO: Devesh, Import a new dataset here, where the train is either [all data, OR unsure data], and test is unsure_data
         df = convert_csv_files_to_df(r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv", r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_2.csv")
         # with open("dataframe_binary_results", "rb") as f: df = pickle.load(f)
 

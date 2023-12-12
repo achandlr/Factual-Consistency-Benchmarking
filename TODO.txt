@@ -1,1 +1,103 @@
-1. Add models to model category. add pyanno model (at least their dawid maybe all 3), include snorkel's flying squid seperate directory model, then do snorkel's old MetAL -- -include  wrench models, snorkel, metal etc.
+1. Ensembling Methods to Add
+3 or 4 neural models (MLP, etc.)
+1 more boosting method
+
+2. Grid Search Addition/Modication to Models:
+make grid search more reflective of our noisy small dataset
+
+3. Prompt Selection for top-3, top5, top9, top 15
+
+
+
+
+
+TODO Devesh, create a method of prompt selection so that we have 3-5 different prompt pools for each prompt size
+
+Below is one method of achieving this
+''''
+we have three four different criteria for a prompt combination
+
+1. the balanced acc of prompts
+2. TPFP ratio/ TNFN ratio
+3. Variance
+
+
+Now we define a prompt selection method that weights these differently.
+
+combination             1 
+balanced acc of prompts 1
+TPFP ratio              0
+TNFN ratio              0
+Variance                0
+
+
+combination             2: 
+balanced acc of prompts .5
+TPFP ratio              .25
+TNFN ratio              .25
+Variance                0
+
+combination             3: 
+balanced acc of prompts .5
+TPFP ratio              .25
+TNFN ratio              .25
+Variance                0
+
+we define best n prompts by maximizing linear equation
+we select prompts to maximize this linear equation, where w_1, w_2, w_3, w_4 are set weights based on that above
+val = w_1 * balanced accs of prompts + w_2 * TPFP ratios of prompts + w_3 * TNFN ratio of prompts + w_4 * Variance of prompts
+'''
+
+
+
+
+the goal of this code is to create a table that is the following
+
+methods -> statistics (including bal. acc. , f1, etc.)
+
+21 different methods -> statistics 
+
+we select a certain number of them, and compare it to our consensus methods -> statistics 
+
+and we do this for a subset of our train_test_combinations
+
+Stages of what Devesh/I need to do
+
+12/12
+1. Devesh - create code that selects 3-5 different prompt combinations each for sizes 3, 5, 9, 15, report these to Alex as a list in the following format
+    prompt_columns_top_3_var_1 = ["",""], prompt_columns_top_3_var_2 = ..., prompt_columns_top_5_var_1 = ...
+2. Alex - run this code after I get prompt combinations from devesh, get df of all results and save it
+
+12/13
+3. Devesh - run ConsensusMethod to get a df of confident, unsure (with those as the origin column), have df in same format as "data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv" 
+    - What should Devesh do this over??
+        option 1: train = SOTA Val, test = SOTA test
+        option 2: train = SOTA Val CNN, test = SOTA test CNN
+        option 3: train = SOTA Val XSUM, test = SOTA test XSUM
+        option 4: train = SOTA Test, test = Halu-equivalent
+        option 5: dp both option 2 and option 3, individually, where we report the test statistics for XSUM and CNN/DM individually
+
+    now origin columns should be train_confident, train_unsure, test_confident, test_unsure
+4. Run ensembling code two train_test_combinations : combination 1. (train = train_unsure), combination 2: train = [train_confident, train_unsure]
+    - on both combinations we will test on test_unsure
+    - from this we will determine what the best stage 2 method is, and if we should train over entire train ([train_confident, train_unsure]) or just train_unsure
+12/14
+5. Devesh - add consensus code to src\models\ConsensusMethod 
+    this code should predict all data (stage 1 + stage 2)
+6. Now we will have our benchmarking mostly done. We will be able to compare our consensus method to all of our ensembling methods
+
+12/15
+7. Add support so that ensembling consensus code (likely in benchmarking.py) so that consensus code can report the indices of confident and train,
+    - this will allow you to compare all ensembling methods on test_confident, determined by consensus stage 1, 
+        - we then can compare consensus test_confidence performance statistics to the best ensembling methods on the test_confidence data 
+            - if our method is worth anything as a consensus method rather than a data integrity tool then our method should be comparable or better than the best other ensembling methods
+    - also, this will allow us to compare consensus stage 2 accuracy to the best ensembling methods over the same test_unsure indices (they should be equivalent or close to one another)
+
+12/18:
+Rerun code one last time over entire_benchmark - this will be the last benchmarking we need to do, and then final work will be making tables/writing paper 
+
+
+
+Concurrent work:
+entire_benchmark = Devesh runs over all datasets with all prompts including the ones that are not ours,
+whenever this is done
