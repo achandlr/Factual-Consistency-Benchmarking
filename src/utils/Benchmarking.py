@@ -50,6 +50,8 @@ class Benchmark:
             data_loader = BinaryDataLoader()
             # TODO: This line should not be necessary once all data is binary
             df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
+
+            
             data_loader.report_llm_answer_errors()
             if skip_nulls:
                 # TODO: Confirm that all rows where one of the columns in prompt_columns_in_use is null is removed from our dataset

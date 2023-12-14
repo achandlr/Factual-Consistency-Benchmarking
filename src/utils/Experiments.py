@@ -68,14 +68,16 @@ def load_experiment_configs() -> List[Experiment]:
        'Comprehensive factual consistency analysis Variant 3.2 - Strict 7',
        'Comprehensive factual consistency analysis Variant 3.2 - Strict 8',]
     
-    # TODO:: Have method that selects best n prompts
-    prompt_columns_top_3_var_1 = prompt_columns_all_ours[0:3] # TODO: add code to select the best 3 promtps to use, ["col1", "col2", "col3"]
-    prompt_columns_top_3_var_2 = prompt_columns_all_ours[0:3] # TODO: add different variations of the top_n prompts based on our selection criteria (bal. acc, TPFP/TNFN ratios, variance, etc.)
-    prompt_columns_top_5 = prompt_columns_all_ours[0:5]  # ["col1", "col2", "col3", "col4", "col5"]
-    prompt_columns_top_9 = prompt_columns_all_ours[0:9] #  ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"]
-    prompt_columns_top_15 = prompt_columns_all_ours[0:15]#   ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12", "col13", "col14", "col15"]
+    from data.imported.datasets.devesh_top_prompts import devesh_selected_prompt_combinations
+    desired_prompt_sets = devesh_selected_prompt_combinations
+    # # TODO:: Have method that selects best n prompts
+    # prompt_columns_top_3_var_1 = prompt_columns_all_ours[0:3] # TODO: add code to select the best 3 promtps to use, ["col1", "col2", "col3"]
+    # prompt_columns_top_3_var_2 = prompt_columns_all_ours[0:3] # TODO: add different variations of the top_n prompts based on our selection criteria (bal. acc, TPFP/TNFN ratios, variance, etc.)
+    # prompt_columns_top_5 = prompt_columns_all_ours[0:5]  # ["col1", "col2", "col3", "col4", "col5"]
+    # prompt_columns_top_9 = prompt_columns_all_ours[0:9] #  ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"]
+    # prompt_columns_top_15 = prompt_columns_all_ours[0:15]#   ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12", "col13", "col14", "col15"]
 
-    desired_prompt_sets = [prompt_columns_all_ours, prompt_columns_top_3_var_1, prompt_columns_top_5, prompt_columns_top_9, prompt_columns_top_15]
+    # desired_prompt_sets = [prompt_columns_all_ours, prompt_columns_top_3_var_1, prompt_columns_top_5, prompt_columns_top_9, prompt_columns_top_15]
 
     # Experiment configurations
     train_test_combinations = [

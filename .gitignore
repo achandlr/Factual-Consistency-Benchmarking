@@ -9,3 +9,4 @@ EnsemblingBenchmark
 src/models/WRENCHModels/wrench
 catboost_info
 src/models/flyingsquid
+src/models/WRENCHModels/flyingsquid
