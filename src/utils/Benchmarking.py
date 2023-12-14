@@ -75,7 +75,7 @@ class Benchmark:
                 # if isinstance(model, WrenchModelBaseClass):  # Assuming WrenchModelBaseClass is a marker class
                 #     results_df = self.run_wrench_model(train_df, test_df, model.__class__.__name__)
                 # Train the model
-                model.train(X_train, Y_train)
+                model.train_with_timing_stats(X_train, Y_train)
                 # Make predictions
                 Y_pred = model.predict(X_test)
                 # Evaluate the model
@@ -127,11 +127,10 @@ if __name__ == "__main__":
         # TODO: Devesh, Import a new dataset here, where the train is either [all data, OR unsure data], and test is unsure_data
         df = convert_csv_files_to_df(r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv", r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_2.csv")
         # with open("dataframe_binary_results", "rb") as f: df = pickle.load(f)
-
     benchmark = Benchmark(models = models, df = df)
     benchmark.run_benchmark()
 
     benchmarking_stats_df = benchmark.results
 
-    with open("benchmarking_stats_df.pkl", "wb") as f:
+    with open("benchmarking_stats_df_12_13.pkl", "wb") as f:
         pickle.dump(benchmarking_stats_df, f)

@@ -240,10 +240,17 @@ class LogisticRegressionSKLearnModel(SKLearnModel):
 
 class SVCSKLearnModel(SKLearnModel):
     def __init__(self):
+        # Note: This param grid takes hours to train on our data. If SVC shows promise, then we can add back a larger grid search
+        # param_grid = {
+        #     'C': np.logspace(-2, 10, 13),
+        #     'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
+        #     'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 13))
+        # }
+
         param_grid = {
-            'C': np.logspace(-2, 10, 13),
+            'C': np.logspace(-2, 10, 3),  
             'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
-            'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 13))
+            'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 3))  # Reduced to 5 values
         }
         super().__init__(SVC(), param_grid)
 

@@ -1,6 +1,20 @@
 from abc import ABC, abstractmethod
-
+from src.utils.logger import setup_logger
+import time
 class ModelBaseClass(ABC):
+
+    def train_with_timing_stats(self, X_train, Y_train):
+        """
+        This method should be used to train the model and also collect timing stats.
+        """
+        # TODO: If necessary, potentially store logger as part of class and training times better
+        logger = setup_logger()
+        start_time = time.time()
+        self.train(X_train, Y_train)
+        end_time = time.time()
+        training_time = end_time - start_time
+        logger.info(f"Training time: {training_time/60} minutes \n\n")
+
 
     @abstractmethod
     def train(self, X_train, Y_train):
