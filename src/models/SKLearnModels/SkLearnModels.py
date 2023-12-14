@@ -246,13 +246,14 @@ class SVCSKLearnModel(SKLearnModel):
         #     'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
         #     'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 13))
         # }
-
-        param_grid = {
-            'C': np.logspace(-2, 10, 3),  
-            'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
-            'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 3))  # Reduced to 5 values
-        }
-        super().__init__(SVC(), param_grid)
+        # Even this takes over 8 hours (on my machine and method did not finish so now not doing a param grid.)
+        # param_grid = {
+        #     'C': np.logspace(-2, 10, 3),  
+        #     'kernel': ['linear', 'poly', 'rbf', 'sigmoid'],
+        #     'gamma': ['scale', 'auto'] + list(np.logspace(-9, 3, 3))  # Reduced to 5 values
+        # }
+        # super().__init__(SVC(), param_grid)
+        super().__init__(SVC(C=1, kernel='rbf', gamma='scale'), None)
 
 class DecisionTreeSKLearnModel(SKLearnModel):
     def __init__(self):

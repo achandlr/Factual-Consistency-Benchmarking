@@ -115,8 +115,13 @@ class Benchmark:
 if __name__ == "__main__":
 
 
+    print("START OF BENCHMARKING")
     # Stage 1: Load all the models
-    models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True)
+    models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = False)
+
+    # TODO: Try the pytorch models
+    models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=False, use_lgb_models = False, use_pytorch_models = True)
+
     # models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=False, use_lgb_models = True)
 
     # Stage 2: Load the data
@@ -134,3 +139,5 @@ if __name__ == "__main__":
 
     with open("benchmarking_stats_df_12_13.pkl", "wb") as f:
         pickle.dump(benchmarking_stats_df, f)
+
+    print("END OF BENCHMARKING")
