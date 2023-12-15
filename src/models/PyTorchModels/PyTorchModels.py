@@ -62,7 +62,7 @@ def test_model(model, test_loader):
             predicted_list = predicted.tolist()
             if isinstance(predicted_list, float):
                 predicted_list = [predicted_list]
-            y_pred.extend(predicted_list.tolist())
+            y_pred.extend(predicted_list)
 
     # Convert to numpy array for return
     y_pred = np.array(y_pred)
