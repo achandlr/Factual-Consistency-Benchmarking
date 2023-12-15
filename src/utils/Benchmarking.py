@@ -38,7 +38,7 @@ class Benchmark:
 
         experiment_configs = load_experiment_configs()
 
-        training_information_message = f"Training a total of {len(experiment_configs)} on a total of {len(experiment_configs)} different configurations:"
+        training_information_message = f"Training a total of {len(self.models)} models on a total of {len(experiment_configs)} different configurations:"
         print(training_information_message)
         self.logger.info(training_information_message)
 
