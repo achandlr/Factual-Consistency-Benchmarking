@@ -108,6 +108,7 @@ Stages of what Devesh/I need to do
 12/18:
 Rerun code one last time over entire_benchmark - this will be the last benchmarking we need to do, and then final work will be making tables/writing paper 
 
+12/19 - Create a table of all of our results so that we have nice tables showing our benchmarking
 
 
 Concurrent work:
