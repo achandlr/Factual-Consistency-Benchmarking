@@ -39,7 +39,7 @@ class Benchmark:
         experiment_configs = load_experiment_configs()
 
     
-        print(f"Training a total of {len(experiment_configs)} on a total of {len({experiment_configs})} different configurations:")
+        print(f"Training a total of {len(experiment_configs)} on a total of {len(experiment_configs)} different configurations:")
         self.logger.info(f"Training a total of {len(experiment_configs)} on a total of {len({experiment_configs})} different configurations:")
 
         for experiment_config in experiment_configs:
