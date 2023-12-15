@@ -58,6 +58,10 @@ def test_model(model, test_loader):
         for data in test_loader:
             output = model(data[0])
             predicted = (output.squeeze() > 0.5).float() # Convert to binary predictions
+            # Handle single float edge case
+            predicted_list = predicted.tolist()
+            if isinstance(predicted_list, float):
+                predicted_list = [predicted_list]
             y_pred.extend(predicted.tolist())
 
     # Convert to numpy array for return

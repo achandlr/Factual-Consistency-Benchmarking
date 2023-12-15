@@ -96,3 +96,49 @@ def load_experiment_configs() -> List[Experiment]:
             configs.append(Experiment(train_origin=train_set, test_origin=test_set, skip_rows_with_null_values=True, prompt_columns_in_use=prompt_set))
 
     return configs
+
+def load_config_for_feature_selection():
+
+    # got from df.columns and manually removed the ones that are not prompts
+    desired_prompt_sets = [
+        'Devesh_Prompt_1 Alex Output Modiciation',
+        'Detailed Inferential Analysis',
+        'Contextual Analysis with Detailed Guidance',
+        'Specific Details and Nuances',
+        'Devesh_Prompt_1.1 Alex Output Modiciation 2 ', 'Devesh Prompt 3',
+        'HALU-EVAl Like Prompt',
+        'Contradiction Highlighted Inferential Analysis',
+        'Strict factual consistency analysis Variant 1 - Targeted Error Detection',
+        'NLI_GPT_PROMPT1119',
+        'Comprehensive factual consistency analysis Variant 3.2',
+        'Extraction NLI', ' Strict factual consistency analysis Variant 3',
+        'Contextual Analysis with Focus on Contradictory Information',
+        'Luo 23 Zero Shot CoT FactCC',
+        'Comprehensive factual consistency analysis Variant 3.1',
+        'Strict factual consistency analysis', 'GPT_improved_nli_style_prompt',
+        'Strict factual consistency analysis Variant 3 - Strict 2',
+        'Comprehensive factual consistency analysis Variant 3.2 - Strict 7',
+        'Comprehensive factual consistency analysis Variant 3.2 - Strict 8'],
+
+    train_test_combinations = [
+        # ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST, DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
+        # ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
+        # ([DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
+        # ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.HALU_EVAL_SUMMARIZATION]),
+        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST], [DatasetOrigin.HALU_EVAL_SUMMARIZATION])
+    ]
+
+    train_test_combinations_values = [([origin.value for origin in train_set], [origin.value for origin in test_set]) for train_set, test_set in train_test_combinations]
+
+    # Create configurations
+    configs = []
+    for train_set, test_set in train_test_combinations_values:
+        for prompt_set in desired_prompt_sets:
+            configs.append(Experiment(train_origin=train_set, test_origin=test_set, skip_rows_with_null_values=True, prompt_columns_in_use=prompt_set))
+
+    assert len(configs) == 1
+
+    return configs[0]
+    # flatten the devesh_selected_prompt_combinations to just be a pool of prompts:
+
+
