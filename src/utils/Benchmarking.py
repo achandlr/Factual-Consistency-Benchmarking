@@ -39,6 +39,9 @@ class Benchmark:
         experiment_configs = load_experiment_configs()
 
     
+        print(f"Training a total of {len(experiment_configs)} on a total of {len({experiment_configs})} different configurations:")
+        self.logger.info(f"Training a total of {len(experiment_configs)} on a total of {len({experiment_configs})} different configurations:")
+
         for experiment_config in experiment_configs:
             self.logger.info(f"START of experiment: {experiment_config}")
             # Access the experiment configuration
@@ -117,10 +120,7 @@ if __name__ == "__main__":
 
     print("START OF BENCHMARKING")
     # Stage 1: Load all the models
-    # models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = False)
-
-    # TODO: Try the pytorch models
-    models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=False, use_lgb_models = False, use_pytorch_models = True)
+    models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = True)
 
     # models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=False, use_lgb_models = True)
 

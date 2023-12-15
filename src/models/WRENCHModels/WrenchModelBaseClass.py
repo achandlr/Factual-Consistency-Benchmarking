@@ -12,7 +12,7 @@ class WrenchModelBaseClass(ModelBaseClass, ABC):
         activate_env = f'source {self.env_path}/bin/activate'
         subprocess.run(f'{activate_env} && {command}', shell=True, executable='/bin/bash')
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         # Serialize X_train, Y_train, save to file, and run the training in subprocess
         pass
 

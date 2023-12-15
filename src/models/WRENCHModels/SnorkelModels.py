@@ -8,7 +8,7 @@ class SnorkelLabelModel(ModelBaseClass):
     def __init__(self, cardinality=2, verbose=True):
         self.model = LabelModel(cardinality=cardinality, verbose=verbose)
 
-    def train(self, L_train, Y_dev=None, n_epochs=500, log_freq=100, seed=123):
+    def _train(self, L_train, Y_dev=None, n_epochs=500, log_freq=100, seed=123):
         self.model.fit(L_train=L_train, Y_dev=Y_dev, n_epochs=n_epochs, log_freq=log_freq, seed=seed)
 
     def predict(self, L):
@@ -25,7 +25,7 @@ class SnorkelMajorityLabelVoter(ModelBaseClass):
     def __init__(self, cardinality=2):
         self.model = MajorityLabelVoter(cardinality=cardinality)
 
-    def train(self, L_train, Y_train=None):
+    def _train(self, L_train, Y_train=None):
         # MajorityLabelVoter doesn't have a fit/train method as it's based on majority voting
         pass
 

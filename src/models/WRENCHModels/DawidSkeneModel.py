@@ -18,7 +18,7 @@ class DawidSkeneModel(ModelBaseClass):
         self.worker_num = None  # Initialize worker_num
         self.task_num = None    # Initialize task_num
 
-    def train(self, X_train, golden_labels):
+    def _train(self, X_train, golden_labels):
         self.dataset_tensor = self._convert_to_tensor(X_train)
         self.worker_num = X_train.shape[1]  # Set the number of workers
         self.task_num = X_train.shape[0]    # Set the number of tasks

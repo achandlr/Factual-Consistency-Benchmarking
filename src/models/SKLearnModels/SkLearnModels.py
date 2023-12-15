@@ -65,7 +65,7 @@ class SKLearnModel(ModelBaseClass):
     #         self.grid_search.fit(X_train, Y_train)
     #     else:
     #         self.base_model.fit(X_train, Y_train)
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         start_time = time.time()  # Start timing
 
         model_name = self.base_model.__class__.__name__  # Get the class name of the base model
@@ -139,7 +139,7 @@ class WeightedMajorityVotingClassifier(ModelBaseClass, BaseEstimator, Classifier
         self.classifiers = classifiers
         self.weights = None
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         self.weights = []
         for clf in self.classifiers:
             clf.fit(X_train, Y_train)

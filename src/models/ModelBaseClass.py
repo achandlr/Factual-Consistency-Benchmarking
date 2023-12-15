@@ -10,14 +10,14 @@ class ModelBaseClass(ABC):
         # TODO: If necessary, potentially store logger as part of class and training times better
         logger = setup_logger()
         start_time = time.time()
-        self.train(X_train, Y_train)
+        self._train(X_train, Y_train)
         end_time = time.time()
         training_time = end_time - start_time
         logger.info(f"Training time: {training_time/60} minutes \n\n")
 
 
     @abstractmethod
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         pass
 
     @abstractmethod

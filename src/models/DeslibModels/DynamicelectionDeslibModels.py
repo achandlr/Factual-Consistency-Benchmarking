@@ -28,7 +28,7 @@ TODO: to make this work, I need to convert my numpy preds, and scores, to a clas
 '''
 class CalibratedClassifierCVModel(ModelBaseClass):
 
-    def train(self, X_train, X_test):
+    def _train(self, X_train, X_test):
 
         scalar = StandardScaler()
         X_train_copy = copy.deepcopy(X_train)

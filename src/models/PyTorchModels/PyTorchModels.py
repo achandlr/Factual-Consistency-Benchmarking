@@ -95,7 +95,7 @@ class NeuralModel2Layer(ModelBaseClass, nn.Module):
         x = torch.sigmoid(self.fc2(x))
         return x
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         # Determine input size from X_train and initialize layers
         input_size = X_train.shape[1]
         self.initialize_layers(input_size)

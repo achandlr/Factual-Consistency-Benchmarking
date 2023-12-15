@@ -61,7 +61,7 @@ class ConditionalLR(ModelBaseClass):
 
         return best_base_TPFP, best_base_TNFN
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         ratios = ConditionalLR.calculate_ratios(X_train, Y_train)
         best_base_TPFP, best_base_TNFN = ConditionalLR.optimize_rewards(X_train, Y_train, ratios)
         self.optimized_rewards = {

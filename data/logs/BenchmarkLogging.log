@@ -3535,3 +3535,1404 @@
 
 
 2023-12-15 12:45:11,819 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000002382DEA7910> on model [NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:07:22,715 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x000001C12A996F10>
+2023-12-15 13:07:22,939 - MyAppLogger - DEBUG - ERROR_COUNT: 302 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-15 13:07:22,939 - MyAppLogger - DEBUG - ERROR_COUNT: 84 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-15 13:07:22,939 - MyAppLogger - DEBUG - ERROR_COUNT: 28 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-15 13:07:22,940 - MyAppLogger - DEBUG - ERROR_COUNT: 9 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-15 13:07:22,940 - MyAppLogger - DEBUG - ERROR_COUNT: 3 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-15 13:07:22,946 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x000001C12A996F10> on model [NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:09:49,356 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000021E75D3AF90>
+2023-12-15 13:09:49,749 - MyAppLogger - DEBUG - ERROR_COUNT: 596 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-15 13:09:49,749 - MyAppLogger - DEBUG - ERROR_COUNT: 120 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-15 13:09:49,750 - MyAppLogger - DEBUG - ERROR_COUNT: 28 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-15 13:09:49,750 - MyAppLogger - DEBUG - ERROR_COUNT: 9 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-15 13:09:49,750 - MyAppLogger - DEBUG - ERROR_COUNT: 5 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-15 13:09:49,750 - MyAppLogger - DEBUG - ERROR_COUNT: 3 	 STRING: unable to get answer due to 
+
+
+2023-12-15 13:09:49,757 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000021E75D3AF90> on model [NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:12,958 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0>
+2023-12-15 13:11:13,186 - MyAppLogger - DEBUG - ERROR_COUNT: 302 	 STRING: unable to get answer due tothe response was filtered due to the prompt triggering azure openai's content management policy. please modify your prompt and retry. to learn more about our content filtering policies please read our documentation: https://go.microsoft.com/fwlink/?linkid=2198766 
+
+
+2023-12-15 13:11:13,186 - MyAppLogger - DEBUG - ERROR_COUNT: 84 	 STRING: unable to get answer due torate limit is exceeded. try again in 1 seconds. 
+
+
+2023-12-15 13:11:13,187 - MyAppLogger - DEBUG - ERROR_COUNT: 28 	 STRING: unable to get answer due torate limit is exceeded. try again in 2 seconds. 
+
+
+2023-12-15 13:11:13,187 - MyAppLogger - DEBUG - ERROR_COUNT: 9 	 STRING: unable to get answer due torate limit is exceeded. try again in 3 seconds. 
+
+
+2023-12-15 13:11:13,187 - MyAppLogger - DEBUG - ERROR_COUNT: 3 	 STRING: unable to get answer due to'content' 
+
+
+2023-12-15 13:11:13,194 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:14,926 - MyAppLogger - INFO - Training time: 0.028856833775838215 minutes 
+
+
+2023-12-15 13:11:18,710 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:19,897 - MyAppLogger - INFO - Training time: 0.019768341382344564 minutes 
+
+
+2023-12-15 13:11:43,631 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:44,806 - MyAppLogger - INFO - Training time: 0.01955806811650594 minutes 
+
+
+2023-12-15 13:11:45,531 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:46,787 - MyAppLogger - INFO - Training time: 0.02091892957687378 minutes 
+
+
+2023-12-15 13:11:47,421 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:51,769 - MyAppLogger - INFO - Training time: 0.07247233788172404 minutes 
+
+
+2023-12-15 13:11:54,376 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:56,603 - MyAppLogger - INFO - Training time: 0.037120521068573 minutes 
+
+
+2023-12-15 13:11:58,232 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:11:59,395 - MyAppLogger - INFO - Training time: 0.01936409076054891 minutes 
+
+
+2023-12-15 13:12:00,401 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:01,093 - MyAppLogger - INFO - Training time: 0.011522698402404784 minutes 
+
+
+2023-12-15 13:12:01,971 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:02,277 - MyAppLogger - INFO - Training time: 0.005092414220174154 minutes 
+
+
+2023-12-15 13:12:02,970 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:04,151 - MyAppLogger - INFO - Training time: 0.019682602087656657 minutes 
+
+
+2023-12-15 13:12:11,453 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:17,430 - MyAppLogger - INFO - Training time: 0.09959053198496501 minutes 
+
+
+2023-12-15 13:12:17,460 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:18,622 - MyAppLogger - INFO - Training time: 0.01936559279759725 minutes 
+
+
+2023-12-15 13:12:18,652 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:19,844 - MyAppLogger - INFO - Training time: 0.019853150844573973 minutes 
+
+
+2023-12-15 13:12:19,878 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:21,042 - MyAppLogger - INFO - Training time: 0.019400127728780112 minutes 
+
+
+2023-12-15 13:12:21,071 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:22,225 - MyAppLogger - INFO - Training time: 0.01924294630686442 minutes 
+
+
+2023-12-15 13:12:22,252 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:23,459 - MyAppLogger - INFO - Training time: 0.02010117769241333 minutes 
+
+
+2023-12-15 13:12:23,487 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:24,706 - MyAppLogger - INFO - Training time: 0.020286611715952554 minutes 
+
+
+2023-12-15 13:12:24,735 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:25,937 - MyAppLogger - INFO - Training time: 0.02001922527949015 minutes 
+
+
+2023-12-15 13:12:25,965 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:27,118 - MyAppLogger - INFO - Training time: 0.019225732485453288 minutes 
+
+
+2023-12-15 13:12:27,146 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:28,336 - MyAppLogger - INFO - Training time: 0.019808590412139893 minutes 
+
+
+2023-12-15 13:12:28,364 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:29,048 - MyAppLogger - INFO - Training time: 0.011368632316589355 minutes 
+
+
+2023-12-15 13:12:29,070 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+), NeuralModel2Layer(), NeuralModel2Layer()]
+2023-12-15 13:12:30,263 - MyAppLogger - INFO - Training time: 0.019849769274393716 minutes 
+
+
+2023-12-15 13:12:30,291 - MyAppLogger - INFO - Running experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0> on model [NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=8, bias=True)
+  (fc2): Linear(in_features=8, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(8, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=16, bias=True)
+  (fc2): Linear(in_features=16, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=64, bias=True)
+  (fc2): Linear(in_features=64, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.1, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.4, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+), NeuralModel2Layer(
+  (fc1): Linear(in_features=3, out_features=32, bias=True)
+  (fc2): Linear(in_features=32, out_features=1, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+  (batch_norm): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+), NeuralModel2Layer()]
+2023-12-15 13:12:31,281 - MyAppLogger - INFO - Training time: 0.01649060646692912 minutes 
+
+
+2023-12-15 13:12:31,308 - MyAppLogger - INFO - END of experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0>
+2023-12-15 13:12:31,308 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000017C148AFFD0>

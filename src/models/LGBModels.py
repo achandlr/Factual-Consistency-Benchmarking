@@ -13,7 +13,7 @@ class LGBMSKLearnModel(ModelBaseClass):
     def __init__(self):
         pass
     
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         X_train_train, X_train_dev, Y_train_train, Y_train_dev = train_test_split(X_train, Y_train, test_size=0.2)
 
         param_grid = {
@@ -55,7 +55,7 @@ class LGBMSKLearnModel2(ModelBaseClass):
         )
         self.model = None
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         # Define the parameter grid
         param_grid = {
             'num_leaves': [15, 31],  # Simplified range
@@ -126,7 +126,7 @@ class LGBMSKLearnModel3(ModelBaseClass):
     def __init__(self):
         pass
 
-    def train(self, X_train, Y_train):
+    def _train(self, X_train, Y_train):
         X_train_train, X_train_dev, Y_train_train, Y_train_dev = train_test_split(X_train, Y_train, test_size=0.2)
 
         lgb_train = lgb.Dataset(X_train_train, Y_train_train, params={'verbose': -1}, free_raw_data=False)
