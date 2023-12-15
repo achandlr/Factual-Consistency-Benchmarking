@@ -4936,3 +4936,4 @@
 
 2023-12-15 13:12:31,308 - MyAppLogger - INFO - END of experiment: <src.utils.Experiments.Experiment object at 0x0000017C13D989D0>
 2023-12-15 13:12:31,308 - MyAppLogger - INFO - START of experiment: <src.utils.Experiments.Experiment object at 0x0000017C148AFFD0>
+2023-12-15 13:18:20,513 - MyAppLogger - INFO - Training a total of 20 on a total of 20 different configurations:

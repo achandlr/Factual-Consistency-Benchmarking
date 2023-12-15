@@ -38,9 +38,9 @@ class Benchmark:
 
         experiment_configs = load_experiment_configs()
 
-    
-        print(f"Training a total of {len(experiment_configs)} on a total of {len(experiment_configs)} different configurations:")
-        self.logger.info(f"Training a total of {len(experiment_configs)} on a total of {len({experiment_configs})} different configurations:")
+        training_information_message = f"Training a total of {len(experiment_configs)} on a total of {len(experiment_configs)} different configurations:"
+        print(training_information_message)
+        self.logger.info(training_information_message)
 
         for experiment_config in experiment_configs:
             self.logger.info(f"START of experiment: {experiment_config}")
