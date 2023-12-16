@@ -75,7 +75,7 @@ class FeatureSelector:
 
         while len(curr_prompt_columns_in_use) > 1:
             selected_features = mrmr_classif(X=X_train_df, y=y_train_df, K=len(curr_prompt_columns_in_use)-1)
-            curr_prompt_columns_in_use -=1
+            curr_prompt_columns_in_use  = selected_features
             prompt_size_to_selected_features_method_mmr[len(curr_prompt_columns_in_use)] = selected_features
 
 
@@ -95,7 +95,6 @@ class FeatureSelector:
 
             curr_prompt_columns_in_use = [item for item, flag in zip(curr_prompt_columns_in_use, selector.support_) if flag]
 
-            curr_prompt_columns_in_use -=1
             prompt_size_to_selected_features_method_rfe_svc[len(curr_prompt_columns_in_use)] = curr_prompt_columns_in_use
 
         selected_prompts_using_different_methods = {"rfe": prompt_size_to_selected_features_method_rfe_svc, "mrmr": prompt_size_to_selected_features_method_mmr}
