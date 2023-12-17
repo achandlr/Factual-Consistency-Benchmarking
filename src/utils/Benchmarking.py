@@ -58,9 +58,10 @@ class Benchmark:
             # DATA_TRAIN_TEST_FILTER_COLUMN = "Data_Type"
 
 
-            # TODO: Uncomment this line below       
-            # df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
-            df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name, llm_parsing_method = "convert_correct_wrong_to_binary")
+            df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
+            # Note: This line below was only for determining best consensus stage 2 method
+
+            # df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name, llm_parsing_method = "convert_correct_wrong_to_binary")
 
             
             data_loader.report_llm_answer_errors()
