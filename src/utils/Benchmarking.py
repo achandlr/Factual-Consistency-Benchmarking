@@ -12,6 +12,8 @@ from src.utils.logger import setup_logger
 # from src.models.WRENCHModels.PyannoModels import PyAnnoModelB
 # from src.models.AlexEnsemblingMethods.ConditionalLR import ConditionalLR
 
+
+
 class Benchmark:
     def __init__(self, models, df):
         """
@@ -50,20 +52,28 @@ class Benchmark:
             skip_nulls = experiment_config.skip_rows_with_null_values
             prompt_columns_in_use = experiment_config.prompt_columns_in_use
 
-            data_loader = BinaryDataLoader()
-            # TODO: This line should not be necessary once all data is binary
-            df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
+            data_loader = BinaryDataLoader()           
+            DATA_TRAIN_TEST_FILTER_COLUMN = 'origin'
+            # Note: Line below was previously used to determine best stage 2 consensus method 
+            # DATA_TRAIN_TEST_FILTER_COLUMN = "Data_Type"
+
+
+            # TODO: Uncomment this line below       
+            # df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
+            df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name, llm_parsing_method = "convert_correct_wrong_to_binary")
 
             
             data_loader.report_llm_answer_errors()
             if skip_nulls:
                 # TODO: Confirm that all rows where one of the columns in prompt_columns_in_use is null is removed from our dataset
                 df_no_null = filter_df_by_non_null_prompt(df, needed_non_null_columns = prompt_columns_in_use + [ground_truth_column_name])
-                train_df = df_no_null[df_no_null['origin'].isin(train_origin)]
-                test_df = df_no_null[df_no_null['origin'].isin(test_origin)]
+                train_df = df_no_null[df_no_null[DATA_TRAIN_TEST_FILTER_COLUMN].isin(train_origin)]
+                # Note: Line below was previously used to determine best stage 2 consensus method 
+                # train_df =train_df[train_df['origin'] != 'HALU_EVAL_SUMMARIZATION'].sample(frac=1, random_state=42).iloc[0:1000]
+                test_df = df_no_null[df_no_null[DATA_TRAIN_TEST_FILTER_COLUMN].isin(test_origin)]
             else:
-                train_df = df[df['origin'].isin(train_origin)]
-                test_df = df[df['origin'].isin(test_origin)]
+                train_df = df[df[DATA_TRAIN_TEST_FILTER_COLUMN].isin(train_origin)]
+                test_df = df[df[DATA_TRAIN_TEST_FILTER_COLUMN].isin(test_origin)]
 
 
             X_train= train_df[prompt_columns_in_use].to_numpy() # .transpose() 
@@ -116,12 +126,15 @@ class Benchmark:
 
 
 if __name__ == "__main__":
-
-
+    import time
+    logger = setup_logger()
     print("START OF BENCHMARKING")
+    logger.info("START OF BENCHMARKING")
+    bench_start_time = time.time()
     # Stage 1: Load all the models
     models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = True)
-
+    # models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = False)
+    # models = load_models(use_dawid_skene_models=False, use_sklearn_models=True, use_alex_models=False, use_snorkel_models=False, use_lgb_models = False, use_pytorch_models = False)
     # models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=False, use_lgb_models = True)
 
     # Stage 2: Load the data
@@ -129,7 +142,9 @@ if __name__ == "__main__":
     if LOAD_PLACE_HOLDER_DATA:
         df = load_placeholder_data()
     else:
-        # TODO: Devesh, Import a new dataset here, where the train is either [all data, OR unsure data], and test is unsure_data
+        # Note: This was previously used to determine the best stage 2 method
+        # df = pd.read_csv(r"data\imported\datasets\aggrefact_val_test_halu_4512_all_results.csv")
+        # TODO: Change this after Devesh is done fully with LLM calls so that it is over all of the prompts including existing prompts
         df = convert_csv_files_to_df(r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv", r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_2.csv")
         # with open("dataframe_binary_results", "rb") as f: df = pickle.load(f)
     benchmark = Benchmark(models = models, df = df)
@@ -137,7 +152,14 @@ if __name__ == "__main__":
 
     benchmarking_stats_df = benchmark.results
 
-    with open("benchmarking_stats_df_12_13.pkl", "wb") as f:
+    with open("benchmarking_stats_df_12_17.pkl", "wb") as f:
         pickle.dump(benchmarking_stats_df, f)
+    # Note: This was for storing best ensembling results for stage 2
+    # with open("benchmarking_for_stage_2.pkl", "wb") as f:
+    #     pickle.dump(benchmarking_stats_df, f)
 
+    bench_end_time = time.time()
     print("END OF BENCHMARKING")
+    print(f"Benchmarking took {(bench_end_time - bench_start_time)/60} minutes")
+    logger.info("END OF BENCHMARKING")
+    logger.info(f"Benchmarking took {(bench_end_time - bench_start_time)/60} minutes")

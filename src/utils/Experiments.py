@@ -2,11 +2,20 @@ from enum import Enum, auto
 from typing import List, Union, Optional, Set
 
 class DatasetOrigin(Enum):
-    AGGREFACCT_SOTA_XSUM_TEST = "AGGREFACCT_SOTA_XSUM_TEST"  # TODO: Change these to what they are in devesh's code
+    AGGREFACCT_SOTA_XSUM_TEST = "AGGREFACCT_SOTA_XSUM_TEST" 
     AGGREFACCT_SOTA_XSUM_VAL = "AGGREFACCT_SOTA_XSUM_VAL"
     AGGREFACCT_SOTA_CNN_DM_TEST = "AGGREFACCT_SOTA_CNN_DM_TEST"
     AGGREFACCT_SOTA_CNN_DM_VAL = "AGGREFACCT_SOTA_CNN_DM_VAL"
     HALU_EVAL_SUMMARIZATION = "HALU_EVAL_SUMMARIZATION"
+
+
+class DataTypeOrigin(Enum):
+    Confident_Train     = "Confident_Train"  
+    Unsure_Train        = "Unsure_Train"
+    Confident_Test      = "Confident_Test"
+    Unsure_Test         = "Unsure_Test"
+    HALU_EVAL_SUMMARIZATION = "HALU_EVAL_SUMMARIZATION"
+
 
 class Experiment:
     def __init__(self, 
@@ -44,49 +53,28 @@ class Experiment:
 
 
 def load_experiment_configs() -> List[Experiment]:
-    # Define the prompt column sets
-    # TODO: We need to pass in our columns here!
-    prompt_columns_all_ours = ['Devesh_Prompt_1 Alex Output Modiciation',
-       'Detailed Inferential Analysis',
-       'Contextual Analysis with Detailed Guidance',
-       'Specific Details and Nuances',
-       'Devesh_Prompt_1.1 Alex Output Modiciation 2 ', 
-       'Devesh Prompt 3',
-       'HALU-EVAl Like Prompt',
-       'Contradiction Highlighted Inferential Analysis',
-       'Strict factual consistency analysis Variant 1 - Targeted Error Detection',
-       'NLI_GPT_PROMPT1119',
-       'Comprehensive factual consistency analysis Variant 3.2',
-       'Extraction NLI', 
-       ' Strict factual consistency analysis Variant 3',
-       'Contextual Analysis with Focus on Contradictory Information',
-       'Luo 23 Zero Shot CoT FactCC',
-       'Comprehensive factual consistency analysis Variant 3.1',
-       'Strict factual consistency analysis', 
-       'GPT_improved_nli_style_prompt',
-       'Strict factual consistency analysis Variant 3 - Strict 2',
-       'Comprehensive factual consistency analysis Variant 3.2 - Strict 7',
-       'Comprehensive factual consistency analysis Variant 3.2 - Strict 8',]
-    
-    from data.imported.datasets.devesh_top_prompts import devesh_selected_prompt_combinations
-    desired_prompt_sets = devesh_selected_prompt_combinations
-    # # TODO:: Have method that selects best n prompts
-    # prompt_columns_top_3_var_1 = prompt_columns_all_ours[0:3] # TODO: add code to select the best 3 promtps to use, ["col1", "col2", "col3"]
-    # prompt_columns_top_3_var_2 = prompt_columns_all_ours[0:3] # TODO: add different variations of the top_n prompts based on our selection criteria (bal. acc, TPFP/TNFN ratios, variance, etc.)
-    # prompt_columns_top_5 = prompt_columns_all_ours[0:5]  # ["col1", "col2", "col3", "col4", "col5"]
-    # prompt_columns_top_9 = prompt_columns_all_ours[0:9] #  ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9"]
-    # prompt_columns_top_15 = prompt_columns_all_ours[0:15]#   ["col1", "col2", "col3", "col4", "col5", "col6", "col7", "col8", "col9", "col10", "col11", "col12", "col13", "col14", "col15"]
 
-    # desired_prompt_sets = [prompt_columns_all_ours, prompt_columns_top_3_var_1, prompt_columns_top_5, prompt_columns_top_9, prompt_columns_top_15]
+    from data.imported.devesh_top_prompts import devesh_selected_prompt_combinations
+    from data.imported.alex_top_prompts import best_rfe_prompt_sets,best_mrmr_prompt_sets 
 
+    desired_prompt_sets = devesh_selected_prompt_combinations + best_rfe_prompt_sets + best_mrmr_prompt_sets
     # Experiment configurations
     train_test_combinations = [
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST, DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.HALU_EVAL_SUMMARIZATION]),
-        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST], [DatasetOrigin.HALU_EVAL_SUMMARIZATION])
+        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST], [DatasetOrigin.HALU_EVAL_SUMMARIZATION]),
+        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST, DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.HALU_EVAL_SUMMARIZATION])
     ]
+
+    # Note: This config was used to determine the best stage 2 consensus method
+    # train_test_combinations = [
+    #     ([DataTypeOrigin.Confident_Train, DataTypeOrigin.Unsure_Train], [DataTypeOrigin.Unsure_Test]),
+    #     ([ DataTypeOrigin.Unsure_Train], [DataTypeOrigin.Unsure_Test]),
+    #     ([DataTypeOrigin.Confident_Train], [DataTypeOrigin.Unsure_Test])
+    # ]
+
     train_test_combinations_values = [([origin.value for origin in train_set], [origin.value for origin in test_set]) for train_set, test_set in train_test_combinations]
 
     # Create configurations
@@ -98,6 +86,7 @@ def load_experiment_configs() -> List[Experiment]:
     return configs
 
 def load_config_for_feature_selection():
+
 
     # got from df.columns and manually removed the ones that are not prompts
     desired_prompt_sets = [

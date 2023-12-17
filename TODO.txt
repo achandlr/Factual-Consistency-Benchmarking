@@ -78,7 +78,7 @@ Stages of what Devesh/I need to do
     prompt_columns_top_3_var_1 = ["",""], prompt_columns_top_3_var_2 = ..., prompt_columns_top_5_var_1 = ...
 2. Alex - run this code after I get prompt combinations from devesh, get df of all results and save it
 
-12/13 - NOW 12/15 Devesh Run this
+12/13 - Completed - NOW 12/15 Devesh Run this
 3. Devesh - run ConsensusMethod to get a df of confident, unsure (with those as the origin column), have df in same format as "data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv" 
     - What should Devesh do this over??
         option 1: train = SOTA Val, test = SOTA test
@@ -88,13 +88,14 @@ Stages of what Devesh/I need to do
         option 5: dp both option 2 and option 3, individually, where we report the test statistics for XSUM and CNN/DM individually
 
     now origin columns should be train_confident, train_unsure, test_confident, test_unsure
-4. Run ensembling code two train_test_combinations : combination 1. (train = train_unsure), combination 2: train = [train_confident, train_unsure]
+4. Completed - Run ensembling code two train_test_combinations : combination 1. (train = train_unsure), combination 2: train = [train_confident, train_unsure]
     - on both combinations we will test on test_unsure
     - from this we will determine what the best stage 2 method is, and if we should train over entire train ([train_confident, train_unsure]) or just train_unsure
 
-12/14 - Now 12/15 + Weekend
+12/14 - Now 12/15 Now 12/17 - this is what Devesh is doing on Sunday 
 5. Devesh - add consensus code to src\models\ConsensusMethod 
     this code should predict all data (stage 1 + stage 2)
+Now night of 12/16 or morning 12/17
 6. Rerun Ensembling now including the consensus method
     - Now we will have our benchmarking mostly done. We will be able to compare our consensus method to all of our ensembling methods
 

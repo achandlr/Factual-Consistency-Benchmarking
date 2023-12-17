@@ -5,8 +5,8 @@ from src.models.WRENCHModels.SnorkelModels import SnorkelLabelModel, SnorkelMajo
 from src.models.LGBModels import LGBMSKLearnModel, LGBMSKLearnModel2, LGBMSKLearnModel3
 from src.models.SKLearnModels.SkLearnModels import instantiate_sk_learn_models
 from src.models.PyTorchModels.PyTorchModels import load_pytorch_models
-
-def load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = True):
+from src.models.ConsensusMethod.ConsensusMethod import ConsensusMethod
+def load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = True, load_consensus_models = False):
     """
     Returns a list of models to be used in the benchmarking process.
     """
@@ -24,5 +24,7 @@ def load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_m
     if use_pytorch_models:
         pytorch_models = load_pytorch_models()
         models_in_use.extend(pytorch_models)
-
+    if load_consensus_models:
+        raise NotImplementedError()
+        models_in_use.extend([ConsensusMethod()])
     return models_in_use

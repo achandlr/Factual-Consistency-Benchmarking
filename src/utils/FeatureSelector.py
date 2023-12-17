@@ -54,16 +54,19 @@ class FeatureSelector:
         # TODO: This line should not be necessary once all data is binary
         df = data_loader.convert_llm_answers_to_binary(df, columns = prompt_columns_in_use, ground_truth_column_name =  ground_truth_column_name)
 
+        # TODO: uncomment this line below
+        # DATA_TRAIN_TEST_FILTER_COLUMN = "origin"
+        DATA_TRAIN_TEST_FILTER_COLUMN = "Data_Type"
         
         data_loader.report_llm_answer_errors()
         if skip_nulls:
             # TODO: Confirm that all rows where one of the columns in prompt_columns_in_use is null is removed from our dataset
             df_no_null = filter_df_by_non_null_prompt(df, needed_non_null_columns = curr_prompt_columns_in_use + [ground_truth_column_name])
-            train_df = df_no_null[df_no_null['origin'].isin(train_origin)]
-            test_df = df_no_null[df_no_null['origin'].isin(test_origin)]
+            train_df = df_no_null[df_no_null[DATA_TRAIN_TEST_FILTER_COLUMN].isin(train_origin)]
+            test_df = df_no_null[df_no_null[DATA_TRAIN_TEST_FILTER_COLUMN].isin(test_origin)]
         else:
-            train_df = df[df['origin'].isin(train_origin)]
-            test_df = df[df['origin'].isin(test_origin)]
+            train_df = df[df[DATA_TRAIN_TEST_FILTER_COLUMN].isin(train_origin)]
+            test_df = df[df[DATA_TRAIN_TEST_FILTER_COLUMN].isin(test_origin)]
 
         X_train= train_df[prompt_columns_in_use].to_numpy() # .transpose() 
         X_train_df = train_df[prompt_columns_in_use]
@@ -130,11 +133,12 @@ class FeatureSelector:
 
 
 if __name__ == "__main__":
+    # TODO: Rerun this function so that it is over all of the prompts including existing research prompts after Devesh sends
     LOAD_PLACE_HOLDER_DATA = False
     if LOAD_PLACE_HOLDER_DATA:
         df = load_placeholder_data()
     else:
-        # TODO: Devesh, Import a new dataset here, where the train is either [all data, OR unsure data], and test is unsure_data
+        # TODO: Change this after Devesh is done fully with LLM calls so that it is over all of the prompts including existing prompts
         df = convert_csv_files_to_df(r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_1.csv", r"data\imported\datasets\aggrefact_val_test_halu_4931_dict_2.csv")
         # with open("dataframe_binary_results", "rb") as f: df = pickle.load(f)
     feature_selector = FeatureSelector(models = None, df = df)

@@ -195,11 +195,16 @@ class BinaryDataLoader:
             raise NotImplementedError()
         
     # @staticmethod
-    def convert_llm_answers_to_binary(self, df, columns, ground_truth_column_name):
+    def convert_llm_answers_to_binary(self, df, columns, ground_truth_column_name, llm_parsing_method = "advanced_parse_llm_output"):
         for col in columns:
             if col in df.columns:
-                df[col] = df[col].apply(lambda x: self.advanced_parse_llm_output(x) if isinstance(x, str) else x)
-        
+                # TODO: change back
+                if llm_parsing_method == "advanced_parse_llm_output":
+                    df[col] = df[col].apply(lambda x: self.advanced_parse_llm_output(x) if isinstance(x, str) else x)
+                elif llm_parsing_method == "convert_correct_wrong_to_binary":
+                    df[col] = df[col].apply(lambda x: BinaryDataLoader.convert_ground_truth_to_binary(x) if isinstance(x, str) else x)
+                else:
+                    raise ValueError()
         df[ground_truth_column_name] = df[ground_truth_column_name].apply(lambda x: BinaryDataLoader.convert_ground_truth_to_binary(x) if isinstance(x, str) else x)
         
         return df
