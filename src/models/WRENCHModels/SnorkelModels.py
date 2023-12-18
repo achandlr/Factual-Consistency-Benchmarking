@@ -82,11 +82,11 @@ class SnorkelModelLoader:
             'class_balance': [None, [0.3, 0.7]],
             'lr': [0.001, 0.1],
             'l2': [0.0, 0.1],
-            'optimizer': ['sgd', 'adam', 'rmsprop']
+            'optimizer': ['sgd', 'adam']
         }
 
     def load_snorkel_models(self):
-        snorkel_models = []
+        snorkel_models = [SnorkelLabelModel()]
         for param, values in self.param_groups.items():
             for value in values:
                 new_params = self.baseline_params.copy()

@@ -15,7 +15,7 @@ class Evaluator:
         try:
             f1 = f1_score(y_true, y_pred)
         except Exception as e:
-            f1_score = np.nan
+            f1 = np.nan
         try:
             sensitivity = recall_score(y_true, y_pred)  # Recall is the same as sensitivity
         except Exception as e:

@@ -133,6 +133,8 @@ if __name__ == "__main__":
     logger.info("START OF BENCHMARKING")
     bench_start_time = time.time()
     # Stage 1: Load all the models
+    # models = load_models(use_dawid_skene_models=False, use_sklearn_models=False, use_alex_models=False, use_snorkel_models=True, use_lgb_models = False, use_pytorch_models = False)
+
     models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = False)
     # models = load_models(use_dawid_skene_models=True, use_sklearn_models=True, use_alex_models=True, use_snorkel_models=True, use_lgb_models = True, use_pytorch_models = False)
     # models = load_models(use_dawid_skene_models=False, use_sklearn_models=True, use_alex_models=False, use_snorkel_models=False, use_lgb_models = False, use_pytorch_models = False)
@@ -153,7 +155,7 @@ if __name__ == "__main__":
 
     benchmarking_stats_df = benchmark.results
 
-    with open("benchmarking_stats_df_12_17.pkl", "wb") as f:
+    with open("benchmarking_stats_df_12_18.pkl", "wb") as f:
         pickle.dump(benchmarking_stats_df, f)
     # Note: This was for storing best ensembling results for stage 2
     # with open("benchmarking_for_stage_2.pkl", "wb") as f:
