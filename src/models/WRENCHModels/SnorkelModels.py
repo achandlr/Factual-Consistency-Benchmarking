@@ -1,24 +1,122 @@
 from snorkel.labeling.model import LabelModel, MajorityLabelVoter
 # from abc import ABC, abstractmethod
-
+import numpy as np
 from src.models.ModelBaseClass import ModelBaseClass
 
 # TODO: Devesh - build variants of this snorkel label model that test different parameters, maybe even grid search
-class SnorkelLabelModel(ModelBaseClass):
-    def __init__(self, cardinality=2, verbose=True):
-        self.model = LabelModel(cardinality=cardinality, verbose=verbose)
+# class SnorkelLabelModel(ModelBaseClass):
+#     def __init__(self, cardinality=2, verbose=True):
+#         self.model = LabelModel(cardinality=cardinality, verbose=verbose)
 
-    def _train(self, L_train, Y_dev=None, n_epochs=500, log_freq=100, seed=123):
-        self.model.fit(L_train=L_train, Y_dev=Y_dev, n_epochs=n_epochs, log_freq=log_freq, seed=seed)
+#     def _train(self, L_train, Y_dev=None, n_epochs=500, log_freq=100, seed=123):
+#         self.model.fit(L_train=L_train, Y_dev=Y_dev, n_epochs=n_epochs, log_freq=log_freq, seed=seed)
+
+#     def predict(self, L):
+#         return self.model.predict(L)
+
+#     def report_trained_parameters(self):
+#         return {
+#             "weights": self.model.get_weights(),
+#             # "accuracy": self.model.score(L, Y, metrics=["accuracy"])["accuracy"]
+#         }
+
+class SnorkelLabelModel(ModelBaseClass):
+    def __init__(self, cardinality=2, verbose=True, n_epochs=500, log_freq=100, seed=123, class_balance=None, lr=0.01, l2=0.0, optimizer='sgd'):
+        self.model = LabelModel(cardinality=cardinality, verbose=verbose)
+        # Store additional training parameters as class attributes
+        self.n_epochs = n_epochs
+        self.log_freq = log_freq
+        self.seed = seed
+        self.class_balance = class_balance
+        self.lr = lr
+        self.l2 = l2
+        self.optimizer = optimizer
+
+    def _train(self, L_train, Y_dev=None):
+        # Use stored training parameters
+        self.model.fit(L_train=L_train, Y_dev=Y_dev, n_epochs=self.n_epochs, log_freq=self.log_freq, seed=self.seed, 
+                       class_balance=self.class_balance, lr=self.lr, l2=self.l2, optimizer=self.optimizer)
 
     def predict(self, L):
-        return self.model.predict(L)
+        predictions =  self.model.predict(L)
+    
+        # Handling ties or unexpected values
+        for i, pred in enumerate(predictions):
+            if pred not in [0, 1]:
+                # Replace with a default value or a random choice
+                predictions[i] = np.random.choice([0, 1])
+        
+        return predictions
 
     def report_trained_parameters(self):
         return {
             "weights": self.model.get_weights(),
+            "n_epochs": self.n_epochs,
+            "log_freq": self.log_freq,
+            "seed": self.seed,
+            "class_balance": self.class_balance,
+            "lr": self.lr,
+            "l2": self.l2,
+            "optimizer": self.optimizer
+
             # "accuracy": self.model.score(L, Y, metrics=["accuracy"])["accuracy"]
         }
+
+class SnorkelModelLoader:
+    def __init__(self):
+        self.baseline_params = {
+            'cardinality': 2,
+            'verbose': True,
+            'n_epochs': 500,
+            'log_freq': 100,
+            'seed': 123,
+            'class_balance': [0.5, 0.5],
+            'lr': 0.01,
+            'l2': 0.01,
+            'optimizer': 'adam'
+        }
+
+        self.param_groups = {
+            'n_epochs': [100, 1000],
+            'log_freq': [10, 50],
+            'class_balance': [None, [0.3, 0.7]],
+            'lr': [0.001, 0.1],
+            'l2': [0.0, 0.1],
+            'optimizer': ['sgd', 'adam', 'rmsprop']
+        }
+
+    def load_snorkel_models(self):
+        snorkel_models = []
+        for param, values in self.param_groups.items():
+            for value in values:
+                new_params = self.baseline_params.copy()
+                new_params[param] = value
+                model = SnorkelLabelModel(**new_params)
+                snorkel_models.append(model)
+
+        return snorkel_models
+
+
+# class SnorkelLabelModel(ModelBaseClass):
+#     def __init__(self, cardinality=2, verbose=True, n_epochs=500, log_freq=100, seed=123):
+#         self.model = LabelModel(cardinality=cardinality, verbose=verbose)
+#         # Store training parameters as class attributes
+#         self.n_epochs = n_epochs
+#         self.log_freq = log_freq
+#         self.seed = seed
+
+#     def _train(self, L_train, Y_dev=None):
+#         # Use stored training parameters
+#         self.model.fit(L_train=L_train, Y_dev=Y_dev, n_epochs=self.n_epochs, log_freq=self.log_freq, seed=self.seed)
+
+#     def predict(self, L):
+#         return self.model.predict(L)
+
+#     def report_trained_parameters(self):
+#         return {
+#             "weights": self.model.get_weights(),
+#             # "accuracy": self.model.score(L, Y, metrics=["accuracy"])["accuracy"]
+#         }
 
 
 class SnorkelMajorityLabelVoter(ModelBaseClass):
@@ -31,7 +129,16 @@ class SnorkelMajorityLabelVoter(ModelBaseClass):
 
     def predict(self, L):
         L_as_int = L.astype(int)
-        return self.model.predict(L_as_int)
+        predictions = self.model.predict(L_as_int)
+        
+        # Handling ties or unexpected values
+        for i, pred in enumerate(predictions):
+            if pred not in [0, 1]:
+                # Replace with a default value or a random choice
+                predictions[i] = np.random.choice([0, 1])
+        
+        return predictions
+
 
     def report_trained_parameters(self):
         # MajorityLabelVoter doesn't have parameters to learn
