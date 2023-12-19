@@ -12,7 +12,7 @@ def process_and_display_data(file_path, column_X, column_Y, model_column):
     # Dropping specified columns
     drop_columns = ['ModelParameters', 'TP_count', 'TN_count', 'SkipNulls', 
                     'FP_count', 'FN_count', 'sensitivity', 'precision', 
-                    'specificity', 'f1_score', 'accuracy', 'TestOrigin','PromptColumnsInUse']
+                    'specificity', 'f1_score', 'accuracy', 'TrainOrigin','PromptColumnsInUse','y_true','y_pred']
     df.drop(columns=drop_columns, inplace=True)
     
     # Step 2: Split the DataFrame into subsections
@@ -46,5 +46,6 @@ def process_and_display_data(file_path, column_X, column_Y, model_column):
     print(model_stats)
 
 # Example usage of the function
-file_path = 'benchmarking_for_stage_2.pkl'
-process_and_display_data(file_path, 'TrainOrigin', 'balanced_accuracy', 'Model')
+file_path = 'benchmarking_stats_df_12_18.pkl'
+# file_path = 'benchmarking_for_stage_2.pkl'
+process_and_display_data(file_path, 'TestOrigin', 'balanced_accuracy', 'Model')
