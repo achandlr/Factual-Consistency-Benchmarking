@@ -61,6 +61,8 @@ def load_experiment_configs() -> List[Experiment]:
     # Experiment configurations
     train_test_combinations = [
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST, DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
+        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST]),
+        ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST]),
         ([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL], [DatasetOrigin.HALU_EVAL_SUMMARIZATION]),
