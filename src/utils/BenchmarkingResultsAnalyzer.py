@@ -3,8 +3,11 @@ from src.utils.Experiments import DatasetOrigin
 
 
 def get_dataset_to_method_to_prompt_size_to_acc(results_df_path):
-    # Step 1: Read in the file
-    df = pd.read_pickle(file_path)
+    if type(results_df_path) == str: 
+        # Step 1: Read in the file
+        df = pd.read_pickle(results_df_path)
+    else:
+        raise NotImplementedError("concat the different paths")
     df['TestOriginTuple'] = df["TestOrigin"].apply(lambda x: tuple(x))
     df['TrainOriginTuple'] = df["TrainOrigin"].apply(lambda x: tuple(x))
     df['num_prompts'] = df["PromptColumnsInUse"].apply(lambda x: len(x))
@@ -12,28 +15,42 @@ def get_dataset_to_method_to_prompt_size_to_acc(results_df_path):
     train_tuple = tuple([DatasetOrigin.AGGREFACCT_SOTA_XSUM_VAL.name, DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_VAL.name])
     dataset_name_to_test_tuple = {"XSUM": tuple([DatasetOrigin.AGGREFACCT_SOTA_XSUM_TEST.name]), "CNN_DM": tuple([DatasetOrigin.AGGREFACCT_SOTA_CNN_DM_TEST.name]), "HaluEval": tuple([DatasetOrigin.HALU_EVAL_SUMMARIZATION.name])}
 
-    df_with_desired_training =  df[df["TrainOriginTuple"] == train_tuple]
+    # TODO: Switch back later, but for now we don't know if the best train df for XSUM is XSUM+CNN_DM Val or just XSUM, same thing for CNN_DM
+    df_with_desired_training = df #  df[df["TrainOriginTuple"] == train_tuple]
     test_dataset_name_to_df_for_that_test_df = {dataset_name: df_with_desired_training[df_with_desired_training["TestOriginTuple"] == test_tuple] for dataset_name, test_tuple in dataset_name_to_test_tuple.items()}
     
 
     xsum_eval_results_df = test_dataset_name_to_df_for_that_test_df["XSUM"]
     cnn_dm_eval_results_df = test_dataset_name_to_df_for_that_test_df["CNN_DM"]
     halu_eval_results_df = test_dataset_name_to_df_for_that_test_df["HaluEval"]
-
+    unique_models = halu_eval_results_df["Model"].unique()
     desired_prompt_sizes = [3, 5, 9, 15]
+
     models_of_interest = ['DawidSkeneModel', 'WeightedMajorityVotingClassifier',
  'RandomForestSKLearnModel', 'GradientBoostingSKLearnModel',
  'AdaBoostSKLearnModel', 
  'LogisticRegressionSKLearnModel', 'SVCSKLearnModel',
- 'DecisionTreeSKLearnModel', 'GaussianNBSKLearnModel',
- 'MultinomialNBSKLearnModel' , 'BernoulliNBSKLearnModel', 
+ 'DecisionTreeSKLearnModel' , 'BernoulliNBSKLearnModel', 
  'KNeighborsSKLearnModel' ,'LDASKLearnModel' ,'CatBoostSKLearnModel',
- 'XGBSKLearnModel' ,'ConditionalLR' ,'SnorkelMajorityLabelVoter',
+ 'XGBSKLearnModel' ,'SnorkelMajorityLabelVoter',
  'SnorkelLabelModel' , 'LGBMSKLearnModel3', 'LGBMSKLearnModel',
- 'LGBMSKLearnModel2'] # Removed 'DummySKLearnModel', TODO: remove other models that have bad results or we don't want in chart. Select 6-10 best models and make them the ones in our chart. Have full results in the appendix
+ 'LGBMSKLearnModel2','ConsensusMethod'] 
+    
+    # Removed 'DummySKLearnModel', TODO: remove other models that have bad results or we don't want in chart. Select 6-10 best models and make them the ones in our chart. Have full results in the appendix
+      
+#     models_of_interest = ['DawidSkeneModel', 'WeightedMajorityVotingClassifier',
+#  'RandomForestSKLearnModel', 'GradientBoostingSKLearnModel',
+#  'AdaBoostSKLearnModel', 
+#  'LogisticRegressionSKLearnModel', 'SVCSKLearnModel',
+#  'DecisionTreeSKLearnModel', 'GaussianNBSKLearnModel',
+#  'MultinomialNBSKLearnModel' , 'BernoulliNBSKLearnModel', 
+#  'KNeighborsSKLearnModel' ,'LDASKLearnModel' ,'CatBoostSKLearnModel',
+#  'XGBSKLearnModel' ,'ConditionalLR' ,'SnorkelMajorityLabelVoter',
+#  'SnorkelLabelModel' , 'LGBMSKLearnModel3', 'LGBMSKLearnModel',
+#  'LGBMSKLearnModel2'] # Removed 'DummySKLearnModel', TODO: remove other models that have bad results or we don't want in chart. Select 6-10 best models and make them the ones in our chart. Have full results in the appendix
+    
     dataset_stats = {}
     for test_dataset_name, df_for_that_test_dataset in test_dataset_name_to_df_for_that_test_df.items():
-        unique_models = halu_eval_results_df["Model"].unique()
         model_stats = {}
         for model in unique_models:
             if model not in models_of_interest:
@@ -48,7 +65,36 @@ def get_dataset_to_method_to_prompt_size_to_acc(results_df_path):
             model_stats[model] = prompt_size_to_acc
         dataset_stats[test_dataset_name] = model_stats
 
-    raise dataset_stats
+    dataset_stats_with_better_names = {}
+    for test_dataset_name, model_stats in dataset_stats.items():
+        # TODO: Delete
+        if test_dataset_name != "HaluEval":
+            continue
+        model_stats_with_desired_name = {}
+        for original_model_name, prompt_size_to_acc in model_stats.items():
+            # prompt_size_to_acc = {}
+            # for prompt_size, acc in prompt_size_to_acc.items():
+            #     prompt_size_to_acc[prompt_size] = acc
+            if  original_model_name in ['LGBMSKLearnModel3', 'LGBMSKLearnModel','LGBMSKLearnModel2']:
+                if 'LGBM' not in model_stats_with_desired_name:
+                    model_stats_with_desired_name['LGBM'] = prompt_size_to_acc
+                best_prompt_size_to_acc = {}
+                for prompt_size, acc in prompt_size_to_acc.items():
+                    if prompt_size not in best_prompt_size_to_acc:
+                        best_prompt_size_to_acc[prompt_size] = acc
+                    else:
+                        best_prompt_size_to_acc[prompt_size] = max(best_prompt_size_to_acc[prompt_size], acc)
+                model_stats_with_desired_name['LGBM']  = best_prompt_size_to_acc
+            elif "SKLearnModel" in original_model_name:
+                preferred_model_name = original_model_name.replace("SKLearnModel", "")
+                model_stats_with_desired_name[preferred_model_name] = prompt_size_to_acc
+            elif "Snorkel" in original_model_name:
+                preferred_model_name = original_model_name.replace("Snorkel", "")
+                model_stats_with_desired_name[preferred_model_name] = prompt_size_to_acc
+
+        dataset_stats_with_better_names[test_dataset_name] = model_stats_with_desired_name
+
+    return dataset_stats_with_better_names
 
 
 def process_and_display_data(file_path, column_X, column_Y, model_column):
@@ -96,9 +142,10 @@ def process_and_display_data(file_path, column_X, column_Y, model_column):
     print("Sorted Model Statistics (Highest, Lowest, Average of balanced_accuracy):")
     print(model_stats)
 
-# Example usage of the function
-file_path = 'benchmarking_stats_df_12_18.pkl'
+if __name__ == "__main__":
+    # Example usage of the function
+    file_path = 'benchmarking_stats_df_12_18.pkl'
 
-dataset_to_method_to_prompt_size_to_acc = get_dataset_to_method_to_prompt_size_to_acc(file_path)
-# file_path = 'benchmarking_for_stage_2.pkl'
-process_and_display_data(file_path, 'TestOrigin', 'balanced_accuracy', 'Model')
+    dataset_to_method_to_prompt_size_to_acc = get_dataset_to_method_to_prompt_size_to_acc(file_path)
+    # file_path = 'benchmarking_for_stage_2.pkl'
+    process_and_display_data(file_path, 'TestOrigin', 'balanced_accuracy', 'Model')
